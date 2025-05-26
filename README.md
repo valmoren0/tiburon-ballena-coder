@@ -1,4 +1,4 @@
-<h1 align="center">Hola👋, Me l lamo Valentina</h1>
+<h1 align="center">Hola👋, Me llamo Valentina</h1>
 <h3 align="center">🎨 Técnica en Diseño Gráfico | 💻 Estudiante de Programación Web</h3>
 
 - 🔭 Actualmente estoy trabajando en **Proyectos de diseño gráfico freelance**
