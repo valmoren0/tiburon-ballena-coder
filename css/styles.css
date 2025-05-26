@@ -1,0 +1,1387 @@
+/*! Reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*! Fin del reset */
+
+/* Comentarios en CSS*/
+/** Comentarios destacados*/
+/*! Comentarios en rojo*/
+/*? Comentarios en azul*/
+/*TODO Comentarios en amarillo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* Tipografía para toda la web ya que el css está linkeado a todos los html */
+
+
+/**! -------- PALETA DE COLOR -------- */
+:root {
+    --color-primario: #0085C9;
+    --color-secundario: #005A87;
+    --color-terciario: #66BDE8;
+    --color-fondo: #E6F3F9;
+    --color-acento: #00B894;
+    --color-texto: #1F1F1F;
+}
+
+/**! -------- INICIO CSS GENERAL -------- */
+/** -------- BODY -------- */
+body {
+    font-family: "Quicksand", sans-serif !important;
+    line-height: 1.6;
+    color: var(--color-texto);
+}
+
+/** -------- HEADER -------- */
+header {
+    background-color: var(--color-terciario);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-secundario);
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--color-fondo);
+    border-radius: 5px;
+}
+
+.custom-navbar .btn-outline-light {
+    color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+.custom-navbar .btn-outline-light:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-terciario);
+    border-color: var(--color-fondo);
+}
+
+.custom-navbar .form-control {
+    background-color: white;
+    color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+}
+
+.bg-body-tertiary {
+    background-color: var(--color-terciario) !important;
+}
+
+/** -------- FOOTER -------- */
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 0;
+}
+
+footer img {
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+/**! -------- FIN CSS GENERAL -------- */
+
+
+/**! -------- INICIO CSS DE INDEX -------- */
+/** -------- SECTION HERO -------- */
+.hero-index {
+    position: relative;
+    /* Posiciona los elementos de forma relativa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    /* Ajusta la altura de la sección */
+    padding: 0 20px;
+    background-color: var(--color-fondo);
+}
+
+.hero-index .bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    /* Ocupa la mitad del contenedor */
+    z-index: 2;
+    /* Hace que el texto esté encima de la imagen */
+    position: relative;
+    /* Necesario para posicionar el texto dentro del bloque */
+    padding: 20px;
+    /* Añade un poco de espacio alrededor del texto */
+}
+
+.hero-index .bloque h1,
+.hero-index .bloque h2,
+.hero-index .bloque p {
+    color: #ffffff;
+    /* Color a blanco para mayor contraste */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Añade sombra para hacerlo más legible */
+    margin-bottom: 10px;
+}
+
+.hero-index .bloque h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    font-family: 'Unbounded', sans-serif;
+}
+
+.hero-index .bloque h2 {
+    font-size: 1.75rem;
+    margin-top: 10px;
+    color: #f5f5f5;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.hero-index .bloque p {
+    font-size: 1rem;
+    max-width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.85;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+.hero-index .btn {
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-index .btn:hover {
+    background-color: var(--color-terciario);
+    transform: scale(1.05);
+}
+
+.hero-index img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* Hace que la imagen esté debajo del texto */
+}
+
+/** -------- SECTION: CARDS -------- */
+section.cards {
+    text-align: center;
+    padding-top: 60px;
+}
+
+section.cards h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: var(--color-secundario);
+}
+
+section.cards .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.cards .card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 280px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    /* separación entre cards */
+}
+
+section.cards .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+section.cards .card h3 {
+    text-align: center;
+    color: var(--color-acento);
+}
+
+section.cards .card p {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-texto);
+    margin-bottom: 20px;
+}
+
+section.cards .card .btn {
+    background-color: var(--color-acento);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+section.cards .card .btn:hover {
+    background-color: var(--color-terciario);
+    transform: scale(1.05);
+}
+
+/** -------- SECTION: INFO E IMÁGENES -------- */
+section.info-imagenes {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.info-imagenes h2 {
+    background-color: var(--color-acento);
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+section.info-imagenes h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--color-secundario);
+}
+
+section.info-imagenes h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-acento);
+    font-style: italic;
+}
+
+section.info-imagenes p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin-bottom: 30px;
+}
+
+section.info-imagenes a.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-secundario);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px var(--color-texto);
+}
+
+/* Contenedor de cada bloque */
+section.info-imagenes .bloque {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: var(--color-fondo);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagen normal*/
+section.info-imagenes .bloque img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 3%;
+    display: flex;
+}
+
+/* Texto normal */
+section.info-imagenes .bloque .texto {
+    width: 50%;
+    text-align: left;
+}
+
+/* Imagen reverse */
+section.info-imagenes .bloque.reverse img {
+    margin-right: 0;
+    margin-left: 3%;
+    /* Para reducir el margen entre imagen y texto */
+}
+
+/* Texto reverse */
+section.info-imagenes .bloque.reverse .texto {
+    text-align: right;
+}
+
+/** -------- SECTION: VIDEOS -------- */
+section.videos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.videos h2 {
+    color: var(--color-secundario);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section.videos .video-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section.videos .video-container iframe {
+    margin: 15px;
+}
+
+/** -------- SECTION: PERFILES -------- */
+section.perfil {
+    margin-top: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.perfil h2 {
+    color: var(--color-secundario);
+    margin-bottom: 30px;
+}
+
+section.perfil .contenedor-datos {
+    display: flex;
+    justify-content: center;
+}
+
+section.perfil .dato {
+    width: 45%;
+    text-align: center;
+    margin: 0 2.5% 30px 2.5%;
+    font-size: 16px;
+}
+
+section.perfil .dato .img-circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-terciario);
+    margin-bottom: 10px;
+}
+
+/**! -------- FIN CSS DE INDEX -------- */
+
+
+/**! -------- INICIO CSS DE HÁBITAT -------- */
+/** -------- SECCIÓN HERO -------- */
+.hero-habitat {
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    background-color: var(--color-terciario);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-habitat .imagen-portada-habitat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.contenido-habitat-hero {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 40px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-habitat-hero h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    font-family: 'Unbounded', sans-serif;
+    margin-bottom: 10px;
+}
+
+.contenido-habitat-hero h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto 10px;
+}
+
+.contenido-habitat-hero p {
+    color: white;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.boton-hero {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-bottom: 70px;
+}
+
+.boton-habitat {
+    z-index: 2;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-acento);
+    color: white;
+    text-align: center;
+}
+
+.boton-habitat:hover {
+    background-color: var(--color-secundario);
+}
+
+/** -------- SECCIÓN INTRO -------- */
+.intro {
+    background-color: var(--color-primario);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-fondo);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+.intro p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    color: var(--color-texto);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.img-intro {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/** -------- SECCIÓN ZONAS -------- */
+.zonas {
+    background-color: var(--color-fondo);
+    padding: 80px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zonas h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-acento);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.zonas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    font-size: 1.2rem;
+    color: var(--color-texto);
+}
+
+.zonas ul li {
+    background-color: var(--color-terciario);
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.zonas ul li::before {
+    content: "🌍";
+    margin-right: 10px;
+}
+
+.img-mapa {
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+}
+
+
+/** -------- SECCIÓN CARACTERÍSTICAS -------- */
+.caracteristicas {
+    background-color: var(--color-terciario);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 4px solid var(--color-acento);
+    border-bottom: 4px solid var(--color-acento);
+}
+
+.caracteristicas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.caracteristicas ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.caracteristicas li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 1.6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    color: var(--color-texto);
+}
+
+.caracteristicas li strong {
+    color: black;
+    font-weight: 700;
+}
+
+/** -------- SECCIÓN GALERÍA -------- */
+.grid-galeria {
+    padding: 40px 20px;
+    background-color: var(--color-fondo);
+}
+
+.grid-galeria .titulo-galeria {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-galeria .contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+}
+
+.grid-galeria .contenedor-imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-galeria .contenedor-imagenes img:hover {
+    transform: scale(1.03);
+}
+
+.grid-galeria .contenedor-imagenes .horizontal {
+    grid-column: span 2;
+}
+
+.grid-galeria .contenedor-imagenes .vertical {
+    grid-row: span 2;
+}
+
+/** -------- SECCIÓN DATO CURIOSO -------- */
+.dato-curioso {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.titulo-dato-curioso {
+    font-size: 2rem;
+    color: var(--color-secundario);
+    margin-bottom: 30px;
+}
+
+.contenedor-curiosidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta-curiosa {
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 280px;
+}
+
+.tarjeta-curiosa h3 {
+    font-size: 1.4rem;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+.tarjeta-curiosa p {
+    font-size: 1rem;
+    color: var(--color-texto);
+    line-height: 1.5;
+}
+
+/** -------- SECCIÓN LUGARES PARA VISITAR -------- */
+.lugares-visita {
+    padding: 40px 20px;
+    background-color: var(--color-fondo);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.titulo-lugares {
+    font-size: 2rem;
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+.descripcion-lugares {
+    font-size: 1.1rem;
+    color: var(--color-texto);
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista-lugares {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.lista-lugares li {
+    width: 100%;
+}
+
+.lista-lugares li a {
+    text-decoration: none;
+    color: var(--color-principal);
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.lista-lugares li a:hover {
+    background-color: var(--color-acento);
+}
+
+/**! -------- FIN CSS DE HÁBITAT -------- */
+
+
+/**! -------- INICIO CSS DE ALIMENTACIÓN -------- */
+
+/* Carousel */
+main .alimentacion-index .carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+main .alimentacion-index .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+main .alimentacion-index .carousel-caption h5,
+main .alimentacion-index .carousel-caption p {
+    color: #fff;
+}
+
+/* Sección de cards */
+main section.alimentacion-detalle {
+    background-color: #f0faff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+main section.alimentacion-detalle h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 2rem;
+}
+
+main section.alimentacion-detalle .alimentacion-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main section.alimentacion-detalle .card-detalle {
+    background-color: #ffffff;
+    border: 2px solid #0066cc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+main section.alimentacion-detalle .card-detalle h3 {
+    color: #005199;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+main section.alimentacion-detalle .card-detalle p {
+    color: #333;
+    font-size: 1rem;
+}
+
+
+/* Sección de curiosidades alimenticias */
+main section.curiosidades-alimentacion {
+    background-color: #e6f7ff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+main section.curiosidades-alimentacion h2 {
+    font-size: 2rem;
+    color: #004466;
+    margin-bottom: 2rem;
+}
+
+main section.curiosidades-alimentacion .curiosidades-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main section.curiosidades-alimentacion .curiosidad {
+    background-color: #ffffff;
+    border-left: 5px solid #0099cc;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+main section.curiosidades-alimentacion .curiosidad h3 {
+    color: #0077aa;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+main section.curiosidades-alimentacion .curiosidad p {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* sabias que? */
+main .alimentacion-curiosidades {
+    padding: 3rem 1rem;
+    background-color: #dff1ff;
+    text-align: center;
+}
+
+main .alimentacion-curiosidades h2 {
+    margin-bottom: 1rem;
+}
+
+main .alimentacion-curiosidades ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+main .alimentacion-curiosidades li {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+
+}
+
+/* Sección de videos */
+main section.videos-alimentacion {
+    background-color: #f0faff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+main section.videos-alimentacion h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 2rem;
+}
+
+main section.videos-alimentacion .contenedor-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main section.videos-alimentacion .video {
+    flex: 1 1 300px;
+    max-width: 560px;
+}
+
+/* Sección del gráfico */
+main section.grafico-alimentacion {
+    background-color: #eaf6ff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+main section.grafico-alimentacion h2 {
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+main section.grafico-alimentacion .barra {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 600px;
+    height: 30px;
+    position: relative;
+    background-color: #dbefff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main section.grafico-alimentacion .barra-color {
+    height: 100%;
+}
+
+main section.grafico-alimentacion .plancton {
+    width: 60%;
+    background-color: var(--color-primario);
+}
+
+main section.grafico-alimentacion .krill {
+    width: 25%;
+    background-color: var(--color-secundario);
+}
+
+main section.grafico-alimentacion .huevos {
+    width: 15%;
+    background-color: var(--color-acento);
+}
+
+main section.grafico-alimentacion .etiqueta {
+    margin-left: 1rem;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+/**! -------- FIN CSS DE ALIMENTACIÓN -------- */
+
+
+/**! -------- INICIO CSS DE CURIOSIDADES -------- */
+/* Sección HERO de Curiosidades */
+.main-content .hero-curiosidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-fondo);
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.main-content .hero-curiosidades .hero-container {
+    z-index: 2;
+    /* Asegura que el texto esté por encima de la imagen */
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.main-content .hero-curiosidades .hero-container h1 {
+    color: var(--color-secundario);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-content .hero-curiosidades .hero-container .subtitulo {
+    color: var(--color-texto);
+    font-size: 1.2rem;
+}
+
+.main-content .hero-curiosidades .imagen-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    /* Coloca la imagen detrás del texto */
+}
+
+.main-content .hero-curiosidades .imagen-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cubre el espacio sin distorsionar */
+    opacity: 0.3;
+    /* Hace la imagen más sutil para que el texto sea legible */
+}
+
+
+/* Sección Curiosidades Destacadas */
+.main-content .curiosidades-destacadas {
+    padding: 4rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.main-content .curiosidades-destacadas h2 {
+    color: var(--color-primario);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.main-content .curiosidades-destacadas .grid-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Responsive grid */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content .curiosidades-destacadas .destacado-card {
+    background-color: var(--color-fondo);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: 100%;
+    /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.main-content .curiosidades-destacadas .destacado-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    /* Efecto al pasar el mouse */
+}
+
+.main-content .curiosidades-destacadas .destacado-card i {
+    font-size: 3rem;
+    /* Tamaño de los iconos */
+    color: var(--color-acento);
+    margin-bottom: 1.5rem;
+}
+
+.main-content .curiosidades-destacadas .destacado-card h3 {
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.main-content .curiosidades-destacadas .destacado-card p {
+    color: var(--color-texto);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Sección Curiosidades en Detalle */
+.main-content .curiosidades-en-detalle {
+    padding: 4rem 1rem;
+    background-color: var(--color-fondo);
+}
+
+.main-content .curiosidades-en-detalle h2 {
+    color: var(--color-primario);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.main-content .curiosidades-en-detalle .detalle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+    /* Espacio entre cada bloque de detalle */
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.main-content .curiosidades-en-detalle .detalle .texto-detalle {
+    flex: 1;
+    padding: 2.5rem;
+}
+
+.main-content .curiosidades-en-detalle .detalle .texto-detalle h3 {
+    color: var(--color-secundario);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-content .curiosidades-en-detalle .detalle .texto-detalle p {
+    color: var(--color-texto);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.main-content .curiosidades-en-detalle .detalle .imagen-detalle {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.main-content .curiosidades-en-detalle .detalle .imagen-detalle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.main-content .curiosidades-en-detalle .detalle.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Sección Llamado a la Acción */
+.main-content .llamado-accion {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.main-content .llamado-accion .cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-content .llamado-accion h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-content .llamado-accion p {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.main-content .llamado-accion .btn {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: none;
+    /* Quita el borde por defecto de Bootstrap */
+}
+
+.main-content .llamado-accion .btn:hover {
+    background-color: var(--color-terciario);
+    color: white;
+}
+/**! -------- FIN CSS DE CURIOSIDADES -------- */
+
+
+/**! -------- INICIO CSS DE CONTACTO -------- */
+/* Sección HERO de Contacto */
+.main-content .hero-contact {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.main-content .hero-contact .hero-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-content .hero-contact .hero-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.main-content .hero-contact .hero-container .subtitulo {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.main-content .contact-info-section-top {
+    background-color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.main-content .contact-info-section-top .info-block-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-content .contact-info-section-top .info-block {
+    background-color: var(--color-fondo);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.main-content .contact-info-section-top .info-block h3 {
+    color: var(--color-secundario);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.main-content .contact-info-section-top .info-block p {
+    color: var(--color-texto);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.main-content .contact-info-section-top .info-block .info-link {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.main-content .contact-info-section-top .info-block .info-link:hover {
+    text-decoration: underline;
+}
+
+.main-content .contact-info-section-top .info-block .social-links-inline {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.main-content .contact-info-section-top .info-block .social-links-inline img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0.8) sepia(1) saturate(5) hue-rotate(160deg);
+}
+
+.main-content .contact-info-section-top .info-block .social-links-inline img:hover {
+    filter: brightness(1) sepia(1) saturate(5) hue-rotate(160deg);
+}
+
+/* Sección del Formulario de Contacto */
+.main-content .contact-form-section {
+    background-color: var(--color-fondo);
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .contact-form-section .form-wrapper {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-content .contact-form-section .form-wrapper h2 {
+    color: var(--color-secundario);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.main-content .contact-form-section .form-wrapper .form-description {
+    color: var(--color-texto);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-content .contact-form-section .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.main-content .contact-form-section .contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .contact-form-section .contact-form .form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--color-texto);
+}
+
+.main-content .contact-form-section .contact-form .form-group input[type="text"],
+.main-content .contact-form-section .contact-form .form-group input[type="email"],
+.main-content .contact-form-section .contact-form .form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--color-terciario);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--color-texto);
+    background-color: #f8fcfc;
+}
+
+.main-content .contact-form-section .contact-form .form-group input[type="text"]:focus,
+.main-content .contact-form-section .contact-form .form-group input[type="email"]:focus,
+.main-content .contact-form-section .contact-form .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 0.25);
+}
+
+.main-content .contact-form-section .contact-form .form-group textarea {
+    resize: vertical;
+}
+
+.main-content .contact-form-section .contact-form .checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main-content .contact-form-section .contact-form .checkbox-group input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.main-content .contact-form-section .contact-form .submit-button {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+.main-content .contact-form-section .contact-form .submit-button:hover {
+    background-color: var(--color-acento);
+}
+/**! -------- FIN CSS DE CONTACTO -------- */
