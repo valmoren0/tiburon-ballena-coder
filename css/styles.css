@@ -771,8 +771,7 @@ section.perfil .dato .img-circular {
 /**! -------- FIN CSS DE HÁBITAT -------- */
 
 
-/**! -------- INICIO CSS DE ALIMENTACIÓN -------- */
-
+/*! -------- INICIO CSS DE ALIMENTACIÓN -------- */
 /* Carousel */
 main .alimentacion-index .carousel-item img {
     max-height: 600px;
@@ -788,19 +787,19 @@ main .alimentacion-index .carousel-caption {
 
 main .alimentacion-index .carousel-caption h5,
 main .alimentacion-index .carousel-caption p {
-    color: #fff;
+    color: var(--color-fondo);
 }
 
 /* Sección de cards */
 main section.alimentacion-detalle {
-    background-color: #f0faff;
+    background-color: var(--color-fondo);
     padding: 3rem 1rem;
     text-align: center;
 }
 
 main section.alimentacion-detalle h2 {
     font-size: 2rem;
-    color: #003366;
+    color: var(--color-secundario);
     margin-bottom: 2rem;
 }
 
@@ -812,8 +811,8 @@ main section.alimentacion-detalle .alimentacion-cards {
 }
 
 main section.alimentacion-detalle .card-detalle {
-    background-color: #ffffff;
-    border: 2px solid #0066cc;
+    background-color: var(--color-fondo);
+    border: 2px solid var(--color-primario);
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -822,31 +821,31 @@ main section.alimentacion-detalle .card-detalle {
 }
 
 main section.alimentacion-detalle .card-detalle h3 {
-    color: #005199;
+    color: var(--color-primario);
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
 }
 
 main section.alimentacion-detalle .card-detalle p {
-    color: #333;
+    color: var(--color-texto);
     font-size: 1rem;
 }
 
 
 /* Sección de curiosidades alimenticias */
-main section.curiosidades-alimentacion {
-    background-color: #e6f7ff;
+main section.alimentacion-curiosidades-detalladas {
+    background-color: var(--color-primario);
     padding: 3rem 1rem;
     text-align: center;
 }
 
-main section.curiosidades-alimentacion h2 {
+main section.alimentacion-curiosidades-detalladas h2 {
     font-size: 2rem;
-    color: #004466;
+    color: var(--color-fondo);
     margin-bottom: 2rem;
 }
 
-main section.curiosidades-alimentacion .curiosidades-grid {
+main section.alimentacion-curiosidades-detalladas .curiosidades-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -854,60 +853,59 @@ main section.curiosidades-alimentacion .curiosidades-grid {
     margin: 0 auto;
 }
 
-main section.curiosidades-alimentacion .curiosidad {
-    background-color: #ffffff;
-    border-left: 5px solid #0099cc;
+main section.alimentacion-curiosidades-detalladas .curiosidad {
+    background-color: var(--color-fondo);
+    border-left: 5px solid var(--color-terciario);
     padding: 1.5rem;
     text-align: left;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-main section.curiosidades-alimentacion .curiosidad h3 {
-    color: #0077aa;
+main section.alimentacion-curiosidades-detalladas .curiosidad h3 {
+    color: var(--color-primario);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-main section.curiosidades-alimentacion .curiosidad p {
-    color: #333;
+main section.alimentacion-curiosidades-detalladas .curiosidad p {
+    color: var(--color-texto);
     font-size: 1rem;
 }
 
-/* sabias que? */
-main .alimentacion-curiosidades {
+/* Sección "Sabías qué?" */
+main .alimentacion-sabias-que {
     padding: 3rem 1rem;
-    background-color: #dff1ff;
+    background-color: var(--color-fondo);
     text-align: center;
 }
 
-main .alimentacion-curiosidades h2 {
+main .alimentacion-sabias-que h2 {
     margin-bottom: 1rem;
 }
 
-main .alimentacion-curiosidades ul {
+main .alimentacion-sabias-que ul {
     list-style: none;
     padding: 0;
     max-width: 600px;
     margin: auto;
 }
 
-main .alimentacion-curiosidades li {
+main .alimentacion-sabias-que li {
     margin-bottom: 0.75rem;
     font-size: 1.1rem;
-
 }
 
 /* Sección de videos */
 main section.videos-alimentacion {
-    background-color: #f0faff;
+    background-color: var(--color-fondo);
     padding: 3rem 1rem;
     text-align: center;
 }
 
 main section.videos-alimentacion h2 {
     font-size: 2rem;
-    color: #003366;
+    color: var(--color-secundario);
     margin-bottom: 2rem;
 }
 
@@ -925,13 +923,13 @@ main section.videos-alimentacion .video {
 
 /* Sección del gráfico */
 main section.grafico-alimentacion {
-    background-color: #eaf6ff;
+    background-color: var(--color-fondo);
     padding: 2rem 1rem;
     text-align: center;
 }
 
 main section.grafico-alimentacion h2 {
-    color: #003366;
+    color: var(--color-secundario);
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -943,7 +941,7 @@ main section.grafico-alimentacion .barra {
     max-width: 600px;
     height: 30px;
     position: relative;
-    background-color: #dbefff;
+    background-color: var(--color-fondo);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -972,8 +970,7 @@ main section.grafico-alimentacion .etiqueta {
     font-weight: bold;
     color: var(--color-texto);
 }
-
-/**! -------- FIN CSS DE ALIMENTACIÓN -------- */
+/*! -------- FIN CSS DE ALIMENTACIÓN -------- */
 
 
 /**! -------- INICIO CSS DE CURIOSIDADES -------- */
@@ -1192,6 +1189,7 @@ main section.grafico-alimentacion .etiqueta {
     background-color: var(--color-terciario);
     color: white;
 }
+
 /**! -------- FIN CSS DE CURIOSIDADES -------- */
 
 
@@ -1384,6 +1382,7 @@ main section.grafico-alimentacion .etiqueta {
 .main-content .contact-form-section .contact-form .submit-button:hover {
     background-color: var(--color-acento);
 }
+
 /**! -------- FIN CSS DE CONTACTO -------- */
 
 
@@ -1556,6 +1555,7 @@ main section.grafico-alimentacion .etiqueta {
         margin-top: 0.5rem;
     }
 }
+
 /**? -------- FIN MEDIA QUERIES DE INDEX -------- */
 
 
@@ -1658,4 +1658,5 @@ main section.grafico-alimentacion .etiqueta {
         height: 180px;
     }
 }
+
 /**? -------- FIN MEDIA QUERIES DE HÁBITAT -------- */
