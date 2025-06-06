@@ -1,0 +1,350 @@
+//SECCIÓN HERO 
+.hero-habitat {
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    background-color: $color-terciario;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .imagen-portada-habitat {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+
+    .contenido-habitat-hero {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 40px 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            font-family: $fuente-unbounded;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            max-width: 600px;
+            margin: 0 auto 10px;
+        }
+
+        p {
+            color: white;
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    .boton-hero {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        padding-bottom: 70px;
+
+        .boton-habitat {
+            z-index: 2;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            background-color: $color-acento;
+            color: white;
+            text-align: center;
+
+            &:hover {
+                background-color: $color-secundario;
+            }
+        }
+    }
+}
+
+/** -------- SECCIÓN INTRO -------- */
+.intro {
+    background-color: $color-primario;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $color-fondo;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 2;
+    }
+
+    p {
+        max-width: 700px;
+        font-size: 1.2rem;
+        color: $color-texto;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .img-intro {
+        max-width: 90%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+/** -------- SECCIÓN ZONAS -------- */
+.zonas {
+    background-color: $color-fondo;
+    padding: 80px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $color-acento;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        font-size: 1.2rem;
+        color: $color-texto;
+
+        li {
+            background-color: $color-terciario;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+            &::before {
+                content: "🌍";
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .img-mapa {
+        max-width: 90%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        margin-top: 20px;
+    }
+}
+
+
+/** -------- SECCIÓN CARACTERÍSTICAS -------- */
+.caracteristicas {
+    background-color: $color-terciario;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 4px solid $color-acento;
+    border-bottom: 4px solid $color-acento;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    ul {
+        list-style: none;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            padding: 15px 25px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            text-align: left;
+            line-height: 1.6;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            color: $color-texto;
+
+            strong {
+                color: black;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/** -------- SECCIÓN GALERÍA -------- */
+.grid-galeria {
+    padding: 40px 20px;
+    background-color: $color-fondo;
+
+    .titulo-galeria {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+        gap: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        .horizontal {
+            grid-column: span 2;
+        }
+
+        .vertical {
+            grid-row: span 2;
+        }
+    }
+}
+
+/** -------- SECCIÓN DATO CURIOSO -------- */
+.dato-curioso {
+    padding: 40px 20px;
+    text-align: center;
+
+    .titulo-dato-curioso {
+        font-size: 2rem;
+        color: $color-secundario;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-curiosidades {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .tarjeta-curiosa {
+        border-radius: 12px;
+        padding: 20px;
+        max-width: 320px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex: 1 1 280px;
+
+        h3 {
+            font-size: 1.4rem;
+            color: $color-primario;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $color-texto;
+            line-height: 1.5;
+        }
+    }
+}
+
+/** -------- SECCIÓN LUGARES PARA VISITAR -------- */
+.lugares-visita {
+    padding: 40px 20px;
+    background-color: $color-fondo;
+    text-align: center;
+    margin-bottom: 0;
+
+    .titulo-lugares {
+        font-size: 2rem;
+        color: $color-primario;
+        margin-bottom: 15px;
+    }
+
+    .descripcion-lugares {
+        font-size: 1.1rem;
+        color: $color-texto;
+        margin-bottom: 25px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lista-lugares {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+
+        li {
+            width: 100%;
+
+            a {
+                text-decoration: none;
+                color: $color-primario;
+                background-color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                font-weight: 500;
+                display: block;
+                text-align: center;
+                margin: 0 10px;
+
+                &:hover {
+                    background-color: $color-acento;
+                }
+            }
+        }
+    }
+}
