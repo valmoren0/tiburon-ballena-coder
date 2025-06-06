@@ -1,0 +1,57 @@
+header {
+    background-color: $color-navbar-fondo;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+
+    .navbar {
+        padding: 0;
+
+        .navbar-brand {
+            img {
+                height: 50px;
+            }
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 15px;
+
+            .nav-link {
+                color: $color-texto-navbar;
+                font-weight: bold;
+                padding: 10px 15px;
+                transition: background 0.3s;
+
+                &:hover {
+                    background-color: $color-bg-btn-outline-navbar-hover;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        &.custom-navbar {
+            .btn-outline-light {
+                color: $color-btn-outline-navbar;
+                border-color: $color-btn-outline-navbar;
+
+                &:hover {
+                    background-color: $color-bg-btn-outline-navbar-hover;
+                    color: $color-texto-btn-outline-navbar-hover;
+                    border-color: $color-bg-btn-outline-navbar-hover;
+                }
+            }
+
+            .form-control {
+                background-color: white;
+                color: $color-btn-outline-navbar;
+                border: 1px solid $color-border-form-control;
+            }
+        }
+
+        &.bg-body-tertiary {
+            background-color: $color-navbar-fondo !important;
+        }
+    }
+}

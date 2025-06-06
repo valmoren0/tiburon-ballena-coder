@@ -1,0 +1,290 @@
+/** -------- INICIO CSS INDEX -------- */
+/** -------- SECTION HERO -------- */
+.hero-index {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: $altura-seccion-hero;
+    padding: $padding-seccion-hero;
+    background-color: $color-fondo;
+
+    .bloque {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        z-index: 2;
+        position: relative;
+        padding: 20px;
+
+        h1,
+        h2,
+        p {
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            font-family: $fuente-unbounded;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 10px;
+            color: #f5f5f5;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        p {
+            font-size: 1rem;
+            max-width: 70%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+    }
+
+    .btn {
+        background-color: $color-acento;
+        color: $color-fondo;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 6px;
+        transition: background 0.3s, transform 0.3s;
+        font-weight: bold;
+        margin-top: 20px;
+
+        &:hover {
+            background-color: $color-terciario;
+            transform: scale(1.05);
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
+/** -------- SECTION: CARDS -------- */
+section.cards {
+    text-align: center;
+    padding-top: $espaciado-seccion-general;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: $color-secundario;
+    }
+
+    .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: $border-radius-card;
+        padding: 30px 20px;
+        width: 280px;
+        box-shadow: $box-shadow-cards;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 10px;
+
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            text-align: center;
+            color: $color-acento;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+            color: $color-texto;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: $color-acento;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+
+            &:hover {
+                background-color: $color-terciario;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+/** -------- SECTION: INFO E IMÁGENES -------- */
+section.info-imagenes {
+    padding: $espaciado-seccion-general 20px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        background-color: $color-acento;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: $color-secundario;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: $color-acento;
+        font-style: italic;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: $color-texto;
+        margin-bottom: 30px;
+    }
+
+    a.btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: $color-secundario;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        box-shadow: 0 2px 5px $color-texto;
+    }
+
+    .bloque {
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: $color-fondo;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 40%;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-right: 3%;
+            display: flex;
+        }
+
+        .texto {
+            width: 50%;
+            text-align: left;
+        }
+
+        &.reverse {
+            img {
+                margin-right: 0;
+                margin-left: 3%;
+            }
+
+            .texto {
+                text-align: right;
+            }
+        }
+    }
+}
+
+/** -------- SECTION: VIDEOS -------- */
+section.videos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+        color: $color-secundario;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        iframe {
+            margin: 15px;
+        }
+    }
+}
+
+/** -------- SECTION: PERFILES -------- */
+section.perfil {
+    margin-top: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        color: $color-secundario;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-datos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dato {
+        width: 45%;
+        text-align: center;
+        margin: 0 2.5% 30px 2.5%;
+        font-size: 16px;
+
+        .img-circular {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid $color-terciario;
+            margin-bottom: 10px;
+        }
+    }
+}
+/** -------- FIN CSS INDEX -------- */
