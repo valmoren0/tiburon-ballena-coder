@@ -1,0 +1,287 @@
+/**? INICIO MEDIA QUERIES DE INDEX */
+
+.perfil {
+    @media screen and (max-width: 550px) {
+        padding: 1rem;
+        text-align: center;
+
+        .contenedor-datos {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .dato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 90%;
+
+            img.img-circular {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+}
+
+.info-imagenes {
+    @media screen and (max-width: 600px) {
+        .bloque img {
+            display: none;
+        }
+
+        .bloque .texto {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .bloque,
+        .bloque.reverse {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .bloque img,
+        .bloque.reverse img {
+            width: 90%;
+            order: -1;
+            margin: 0 0 20px 0;
+        }
+
+        .bloque .texto,
+        .bloque.reverse .texto {
+            width: 100%;
+            text-align: center;
+        }
+
+        .bloque .texto a.btn,
+        .bloque.reverse .texto a.btn {
+            margin-top: 0px;
+            display: inline-block;
+        }
+    }
+}
+
+.videos {
+    @media screen and (max-width: 640px) {
+        padding: 1rem;
+        text-align: center;
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 90vw;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.hero-index {
+    @media screen and (max-width: 710px) {
+        .bloque p {
+            opacity: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            transition: opacity 0.5s ease, height 0.5s ease;
+        }
+    }
+
+    @media screen and (max-width: 1005px) {
+        padding: 20px 10px;
+        height: auto;
+        text-align: left;
+
+        .bloque {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 90%;
+            padding: 10px;
+            gap: 1rem;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 1.5rem;
+                max-width: 100%;
+                margin: 0;
+                word-break: break-word;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                max-width: 100%;
+                margin: 0;
+            }
+
+            p {
+                font-size: 0.9rem;
+                max-width: 40%;
+                margin: 0 0 1rem 0;
+            }
+        }
+
+        .btn {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            margin-top: 0.5rem;
+        }
+    }
+}
+/**? FIN MEDIA QUERIES DE INDEX */
+
+/**? INICIO MEDIA QUERIES DE HABITAT */
+.hero-habitat {
+    @media screen and (max-width: 540px) {
+        .imagen-portada-habitat {
+            height: 90vh;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        .imagen-portada-habitat {
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    @media screen and (max-width: 1330px) {
+        min-height: auto;
+        padding-top: 60px;
+        justify-content: center;
+
+        .imagen-portada-habitat {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.contenido-habitat-hero {
+    @media screen and (max-width: 540px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+
+    @media screen and (max-width: 1330px) {
+        padding: 20px;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
+    }
+}
+
+.boton-hero {
+    @media screen and (max-width: 1330px) {
+        padding-bottom: 40px;
+    }
+}
+
+.boton-habitat {
+    @media screen and (max-width: 1330px) {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1rem;
+    }
+}
+
+.grid-galeria {
+    @media screen and (max-width: 1330px) {
+        .contenedor-imagenes {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 180px;
+
+            .horizontal,
+            .vertical {
+                grid-column: span 1 !important; // ¡Manteniendo !important como en tu CSS original!
+                grid-row: span 1 !important;   // ¡Manteniendo !important como en tu CSS original!
+            }
+
+            img {
+                height: 180px;
+            }
+        }
+
+        .titulo-galeria {
+            font-size: 1.5rem;
+        }
+    }
+}
+/**? FIN MEDIA QUERIES DE HABITAT */
