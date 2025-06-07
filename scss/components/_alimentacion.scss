@@ -1,12 +1,11 @@
 /*! -------- INICIO CSS DE ALIMENTACIÓN -------- */
+
 /* Carousel */
-main .alimentacion-index {
-    .carousel-item {
-        img {
-            max-height: 600px;
-            object-fit: cover;
-            width: 100%;
-        }
+.alimentacion-index {
+    .carousel-item img {
+        max-height: 600px;
+        object-fit: cover;
+        width: 100%;
     }
 
     .carousel-caption {
@@ -22,7 +21,7 @@ main .alimentacion-index {
 }
 
 /* Sección de cards */
-main section.alimentacion-detalle {
+.alimentacion-detalle {
     background-color: $color-fondo;
     padding: 3rem 1rem;
     text-align: center;
@@ -63,7 +62,7 @@ main section.alimentacion-detalle {
 }
 
 /* Sección de curiosidades alimenticias */
-main section.alimentacion-curiosidades-detalladas {
+.alimentacion-curiosidades-detalladas {
     background-color: $color-primario;
     padding: 3rem 1rem;
     text-align: center;
@@ -104,7 +103,7 @@ main section.alimentacion-curiosidades-detalladas {
 }
 
 /* Sección "Sabías qué?" */
-main .alimentacion-sabias-que {
+.alimentacion-sabias-que {
     padding: 3rem 1rem;
     background-color: $color-fondo;
     text-align: center;
@@ -118,16 +117,16 @@ main .alimentacion-sabias-que {
         padding: 0;
         max-width: 600px;
         margin: auto;
+    }
 
-        li {
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
+    li {
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
     }
 }
 
 /* Sección de videos */
-main section.videos-alimentacion {
+.videos-alimentacion {
     background-color: $color-fondo;
     padding: 3rem 1rem;
     text-align: center;
@@ -152,7 +151,7 @@ main section.videos-alimentacion {
 }
 
 /* Sección del gráfico */
-main section.grafico-alimentacion {
+.grafico-alimentacion {
     background-color: $color-fondo;
     padding: 2rem 1rem;
     text-align: center;
@@ -173,25 +172,25 @@ main section.grafico-alimentacion {
         background-color: $color-fondo;
         border-radius: 8px;
         overflow: hidden;
+    }
 
-        .barra-color {
-            height: 100%;
-        }
+    .barra-color {
+        height: 100%;
+    }
 
-        .plancton {
-            width: 60%;
-            background-color: $color-primario;
-        }
+    .plancton {
+        width: 60%;
+        background-color: $color-primario;
+    }
 
-        .krill {
-            width: 25%;
-            background-color: $color-secundario;
-        }
+    .krill {
+        width: 25%;
+        background-color: $color-secundario;
+    }
 
-        .huevos {
-            width: 15%;
-            background-color: $color-acento;
-        }
+    .huevos {
+        width: 15%;
+        background-color: $color-acento;
     }
 
     .etiqueta {

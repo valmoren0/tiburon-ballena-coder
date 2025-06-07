@@ -12,5 +12,15 @@
 body {
     font-family: $fuente-quicksand;
     line-height: 1.6;
-    color: $color-texto; 
+    color: $color-texto;
+}
+
+// Main
+.main-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
 }

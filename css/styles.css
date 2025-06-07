@@ -775,44 +775,44 @@ section.perfil .dato .img-circular {
 
 /*! -------- INICIO CSS DE ALIMENTACIÓN -------- */
 /* Carousel */
-main .alimentacion-index .carousel-item img {
+.alimentacion-index .carousel-item img {
     max-height: 600px;
     object-fit: cover;
     width: 100%;
 }
 
-main .alimentacion-index .carousel-caption {
+.alimentacion-index .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 0.5rem;
 }
 
-main .alimentacion-index .carousel-caption h5,
-main .alimentacion-index .carousel-caption p {
+.alimentacion-index .carousel-caption h5,
+.alimentacion-index .carousel-caption p {
     color: var(--color-fondo);
 }
 
 /* Sección de cards */
-main section.alimentacion-detalle {
+section.alimentacion-detalle {
     background-color: var(--color-fondo);
     padding: 3rem 1rem;
     text-align: center;
 }
 
-main section.alimentacion-detalle h2 {
+section.alimentacion-detalle h2 {
     font-size: 2rem;
     color: var(--color-secundario);
     margin-bottom: 2rem;
 }
 
-main section.alimentacion-detalle .alimentacion-cards {
+section.alimentacion-detalle .alimentacion-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
 }
 
-main section.alimentacion-detalle .card-detalle {
+section.alimentacion-detalle .card-detalle {
     background-color: var(--color-fondo);
     border: 2px solid var(--color-primario);
     border-radius: 12px;
@@ -822,32 +822,31 @@ main section.alimentacion-detalle .card-detalle {
     margin: 0 auto;
 }
 
-main section.alimentacion-detalle .card-detalle h3 {
+section.alimentacion-detalle .card-detalle h3 {
     color: var(--color-primario);
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
 }
 
-main section.alimentacion-detalle .card-detalle p {
+section.alimentacion-detalle .card-detalle p {
     color: var(--color-texto);
     font-size: 1rem;
 }
 
-
 /* Sección de curiosidades alimenticias */
-main section.alimentacion-curiosidades-detalladas {
+section.alimentacion-curiosidades-detalladas {
     background-color: var(--color-primario);
     padding: 3rem 1rem;
     text-align: center;
 }
 
-main section.alimentacion-curiosidades-detalladas h2 {
+section.alimentacion-curiosidades-detalladas h2 {
     font-size: 2rem;
     color: var(--color-fondo);
     margin-bottom: 2rem;
 }
 
-main section.alimentacion-curiosidades-detalladas .curiosidades-grid {
+section.alimentacion-curiosidades-detalladas .curiosidades-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -855,7 +854,7 @@ main section.alimentacion-curiosidades-detalladas .curiosidades-grid {
     margin: 0 auto;
 }
 
-main section.alimentacion-curiosidades-detalladas .curiosidad {
+section.alimentacion-curiosidades-detalladas .curiosidad {
     background-color: var(--color-fondo);
     border-left: 5px solid var(--color-terciario);
     padding: 1.5rem;
@@ -864,79 +863,79 @@ main section.alimentacion-curiosidades-detalladas .curiosidad {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-main section.alimentacion-curiosidades-detalladas .curiosidad h3 {
+section.alimentacion-curiosidades-detalladas .curiosidad h3 {
     color: var(--color-primario);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-main section.alimentacion-curiosidades-detalladas .curiosidad p {
+section.alimentacion-curiosidades-detalladas .curiosidad p {
     color: var(--color-texto);
     font-size: 1rem;
 }
 
 /* Sección "Sabías qué?" */
-main .alimentacion-sabias-que {
+.alimentacion-sabias-que {
     padding: 3rem 1rem;
     background-color: var(--color-fondo);
     text-align: center;
 }
 
-main .alimentacion-sabias-que h2 {
+.alimentacion-sabias-que h2 {
     margin-bottom: 1rem;
 }
 
-main .alimentacion-sabias-que ul {
+.alimentacion-sabias-que ul {
     list-style: none;
     padding: 0;
     max-width: 600px;
     margin: auto;
 }
 
-main .alimentacion-sabias-que li {
+.alimentacion-sabias-que li {
     margin-bottom: 0.75rem;
     font-size: 1.1rem;
 }
 
 /* Sección de videos */
-main section.videos-alimentacion {
+section.videos-alimentacion {
     background-color: var(--color-fondo);
     padding: 3rem 1rem;
     text-align: center;
 }
 
-main section.videos-alimentacion h2 {
+section.videos-alimentacion h2 {
     font-size: 2rem;
     color: var(--color-secundario);
     margin-bottom: 2rem;
 }
 
-main section.videos-alimentacion .contenedor-videos {
+section.videos-alimentacion .contenedor-videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
 }
 
-main section.videos-alimentacion .video {
+section.videos-alimentacion .video {
     flex: 1 1 300px;
     max-width: 560px;
 }
 
 /* Sección del gráfico */
-main section.grafico-alimentacion {
+section.grafico-alimentacion {
     background-color: var(--color-fondo);
     padding: 2rem 1rem;
     text-align: center;
 }
 
-main section.grafico-alimentacion h2 {
+section.grafico-alimentacion h2 {
     color: var(--color-secundario);
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-main section.grafico-alimentacion .barra {
+section.grafico-alimentacion .barra {
     display: flex;
     align-items: center;
     margin: 1rem auto;
@@ -948,26 +947,26 @@ main section.grafico-alimentacion .barra {
     overflow: hidden;
 }
 
-main section.grafico-alimentacion .barra-color {
+section.grafico-alimentacion .barra-color {
     height: 100%;
 }
 
-main section.grafico-alimentacion .plancton {
+section.grafico-alimentacion .plancton {
     width: 60%;
     background-color: var(--color-primario);
 }
 
-main section.grafico-alimentacion .krill {
+section.grafico-alimentacion .krill {
     width: 25%;
     background-color: var(--color-secundario);
 }
 
-main section.grafico-alimentacion .huevos {
+section.grafico-alimentacion .huevos {
     width: 15%;
     background-color: var(--color-acento);
 }
 
-main section.grafico-alimentacion .etiqueta {
+section.grafico-alimentacion .etiqueta {
     margin-left: 1rem;
     font-weight: bold;
     color: var(--color-texto);
@@ -976,9 +975,9 @@ main section.grafico-alimentacion .etiqueta {
 /*! -------- FIN CSS DE ALIMENTACIÓN -------- */
 
 
-/**! -------- INICIO CSS DE CURIOSIDADES -------- */
+/*! -------- INICIO CSS DE CURIOSIDADES -------- */
 /* Sección HERO de Curiosidades */
-.main-content .hero-curiosidades {
+.hero-curiosidades {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -991,15 +990,14 @@ main section.grafico-alimentacion .etiqueta {
     background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
 }
 
-
-.main-content .hero-curiosidades .hero-container {
+.hero-curiosidades .hero-container {
     z-index: 2;
     /* Asegura que el texto esté por encima de la imagen */
     max-width: 800px;
     margin-bottom: 2rem;
 }
 
-.main-content .hero-curiosidades .hero-container h1 {
+.hero-curiosidades .hero-container h1 {
     color: var(--color-fondo);
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -1008,14 +1006,14 @@ main section.grafico-alimentacion .etiqueta {
     letter-spacing: 1.5px;
 }
 
-.main-content .hero-curiosidades .hero-container .subtitulo {
+.hero-curiosidades .hero-container .subtitulo {
     color: var(--color-fondo);
     font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     line-height: 1.4;
 }
 
-.main-content .hero-curiosidades .imagen-hero {
+.hero-curiosidades .imagen-hero {
     position: absolute;
     top: 0;
     left: 0;
@@ -1026,7 +1024,7 @@ main section.grafico-alimentacion .etiqueta {
     /* Coloca la imagen detrás del texto */
 }
 
-.main-content .hero-curiosidades .imagen-hero img {
+.hero-curiosidades .imagen-hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1037,19 +1035,19 @@ main section.grafico-alimentacion .etiqueta {
 
 
 /* Sección Curiosidades Destacadas */
-.main-content .curiosidades-destacadas {
+.curiosidades-destacadas {
     padding: 4rem 1rem;
     background-color: white;
     text-align: center;
 }
 
-.main-content .curiosidades-destacadas h2 {
+.curiosidades-destacadas h2 {
     color: var(--color-primario);
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
-.main-content .curiosidades-destacadas .grid-destacados {
+.curiosidades-destacadas .grid-destacados {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -1057,7 +1055,7 @@ main section.grafico-alimentacion .etiqueta {
     margin: 0 auto;
 }
 
-.main-content .curiosidades-destacadas .destacado-card {
+.curiosidades-destacadas .destacado-card {
     background-color: var(--color-fondo);
     border-radius: 1rem;
     padding: 2rem;
@@ -1070,44 +1068,44 @@ main section.grafico-alimentacion .etiqueta {
     height: 100%;
 }
 
-.main-content .curiosidades-destacadas .destacado-card:hover {
+.curiosidades-destacadas .destacado-card:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     /* Efecto al pasar el mouse */
 }
 
-.main-content .curiosidades-destacadas .destacado-card i {
+.curiosidades-destacadas .destacado-card i {
     font-size: 3rem;
     /* Tamaño de los iconos */
     color: var(--color-acento);
     margin-bottom: 1.5rem;
 }
 
-.main-content .curiosidades-destacadas .destacado-card h3 {
+.curiosidades-destacadas .destacado-card h3 {
     color: var(--color-secundario);
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
-.main-content .curiosidades-destacadas .destacado-card p {
+.curiosidades-destacadas .destacado-card p {
     color: var(--color-texto);
     font-size: 1rem;
     line-height: 1.6;
 }
 
 /* Sección Curiosidades en Detalle */
-.main-content .curiosidades-en-detalle {
+.curiosidades-en-detalle {
     padding: 4rem 1rem;
     background-color: var(--color-fondo);
 }
 
-.main-content .curiosidades-en-detalle h2 {
+.curiosidades-en-detalle h2 {
     color: var(--color-primario);
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.main-content .curiosidades-en-detalle .detalle {
+.curiosidades-en-detalle .detalle {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1120,68 +1118,68 @@ main section.grafico-alimentacion .etiqueta {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-.main-content .curiosidades-en-detalle .detalle .texto-detalle {
+.curiosidades-en-detalle .detalle .texto-detalle {
     flex: 1;
     padding: 2.5rem;
 }
 
-.main-content .curiosidades-en-detalle .detalle .texto-detalle h3 {
+.curiosidades-en-detalle .detalle .texto-detalle h3 {
     color: var(--color-secundario);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.main-content .curiosidades-en-detalle .detalle .texto-detalle p {
+.curiosidades-en-detalle .detalle .texto-detalle p {
     color: var(--color-texto);
     font-size: 1.1rem;
     line-height: 1.7;
 }
 
-.main-content .curiosidades-en-detalle .detalle .imagen-detalle {
+.curiosidades-en-detalle .detalle .imagen-detalle {
     flex: 1;
     min-width: 300px;
     height: 300px;
     overflow: hidden;
 }
 
-.main-content .curiosidades-en-detalle .detalle .imagen-detalle img {
+.curiosidades-en-detalle .detalle .imagen-detalle img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     display: block;
 }
 
-.main-content .curiosidades-en-detalle .detalle.reverse {
+.curiosidades-en-detalle .detalle.reverse {
     flex-direction: row-reverse;
 }
 
 /* Sección Llamado a la Acción */
-.main-content .llamado-accion {
+.llamado-accion {
     background-color: var(--color-primario);
     color: white;
     padding: 4rem 1rem;
     text-align: center;
 }
 
-.main-content .llamado-accion .cta-container {
+.llamado-accion .cta-container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.main-content .llamado-accion h2 {
+.llamado-accion h2 {
     color: white;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
-.main-content .llamado-accion p {
+.llamado-accion p {
     color: white;
     font-size: 1.1rem;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
 
-.main-content .llamado-accion .btn {
+.llamado-accion .btn {
     background-color: var(--color-acento);
     color: white;
     padding: 0.8rem 2rem;
@@ -1192,46 +1190,45 @@ main section.grafico-alimentacion .etiqueta {
     /* Quita el borde por defecto de Bootstrap */
 }
 
-.main-content .llamado-accion .btn:hover {
+.llamado-accion .btn:hover {
     background-color: var(--color-terciario);
     color: white;
 }
 
-/**! -------- FIN CSS DE CURIOSIDADES -------- */
+/*! -------- FIN CSS DE CURIOSIDADES -------- */
 
-
-/**! -------- INICIO CSS DE CONTACTO -------- */
+/*! -------- INICIO CSS DE CONTACTO -------- */
 /* Sección HERO de Contacto */
-.main-content .hero-contact {
+.hero-contact { 
     background-color: var(--color-primario);
     color: white;
     padding: 4rem 1rem;
     text-align: center;
 }
 
-.main-content .hero-contact .hero-container {
+.hero-contact .hero-container {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.main-content .hero-contact .hero-container h1 {
+.hero-contact .hero-container h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: white;
 }
 
-.main-content .hero-contact .hero-container .subtitulo {
+.hero-contact .hero-container .subtitulo {
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
-.main-content .contact-info-section-top {
+.contact-info-section-top {
     background-color: white;
     padding: 4rem 1rem;
     text-align: center;
 }
 
-.main-content .contact-info-section-top .info-block-container {
+.contact-info-section-top .info-block-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -1239,7 +1236,7 @@ main section.grafico-alimentacion .etiqueta {
     margin: 0 auto;
 }
 
-.main-content .contact-info-section-top .info-block {
+.contact-info-section-top .info-block {
     background-color: var(--color-fondo);
     padding: 2rem;
     border-radius: 1rem;
@@ -1251,13 +1248,13 @@ main section.grafico-alimentacion .etiqueta {
     height: 100%;
 }
 
-.main-content .contact-info-section-top .info-block h3 {
+.contact-info-section-top .info-block h3 {
     color: var(--color-secundario);
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.main-content .contact-info-section-top .info-block p {
+.contact-info-section-top .info-block p {
     color: var(--color-texto);
     font-size: 1rem;
     line-height: 1.6;
@@ -1265,35 +1262,35 @@ main section.grafico-alimentacion .etiqueta {
     flex-grow: 1;
 }
 
-.main-content .contact-info-section-top .info-block .info-link {
+.contact-info-section-top .info-block .info-link {
     color: var(--color-acento);
     text-decoration: none;
     font-weight: bold;
     margin-top: auto;
 }
 
-.main-content .contact-info-section-top .info-block .info-link:hover {
+.contact-info-section-top .info-block .info-link:hover {
     text-decoration: underline;
 }
 
-.main-content .contact-info-section-top .info-block .social-links-inline {
+.contact-info-section-top .info-block .social-links-inline {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
 }
 
-.main-content .contact-info-section-top .info-block .social-links-inline img {
+.contact-info-section-top .info-block .social-links-inline img {
     width: 35px;
     height: 35px;
     filter: brightness(0.8) sepia(1) saturate(5) hue-rotate(160deg);
 }
 
-.main-content .contact-info-section-top .info-block .social-links-inline img:hover {
+.contact-info-section-top .info-block .social-links-inline img:hover {
     filter: brightness(1) sepia(1) saturate(5) hue-rotate(160deg);
 }
 
 /* Sección del Formulario de Contacto */
-.main-content .contact-form-section {
+.contact-form-section { 
     background-color: var(--color-fondo);
     padding: 4rem 1rem;
     display: flex;
@@ -1301,7 +1298,7 @@ main section.grafico-alimentacion .etiqueta {
     align-items: center;
 }
 
-.main-content .contact-form-section .form-wrapper {
+.contact-form-section .form-wrapper {
     background-color: white;
     padding: 3rem;
     border-radius: 1rem;
@@ -1311,39 +1308,39 @@ main section.grafico-alimentacion .etiqueta {
     text-align: center;
 }
 
-.main-content .contact-form-section .form-wrapper h2 {
+.contact-form-section .form-wrapper h2 {
     color: var(--color-secundario);
     font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
-.main-content .contact-form-section .form-wrapper .form-description {
+.contact-form-section .form-wrapper .form-description {
     color: var(--color-texto);
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
 }
 
-.main-content .contact-form-section .contact-form {
+.contact-form-section .contact-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     text-align: left;
 }
 
-.main-content .contact-form-section .contact-form .form-group {
+.contact-form-section .contact-form .form-group {
     display: flex;
     flex-direction: column;
 }
 
-.main-content .contact-form-section .contact-form .form-group label {
+.contact-form-section .contact-form .form-group label {
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: var(--color-texto);
 }
 
-.main-content .contact-form-section .contact-form .form-group input[type="text"],
-.main-content .contact-form-section .contact-form .form-group input[type="email"],
-.main-content .contact-form-section .contact-form .form-group textarea {
+.contact-form-section .contact-form .form-group input[type="text"],
+.contact-form-section .contact-form .form-group input[type="email"],
+.contact-form-section .contact-form .form-group textarea {
     padding: 0.8rem;
     border: 1px solid var(--color-terciario);
     border-radius: 0.5rem;
@@ -1352,29 +1349,29 @@ main section.grafico-alimentacion .etiqueta {
     background-color: #f8fcfc;
 }
 
-.main-content .contact-form-section .contact-form .form-group input[type="text"]:focus,
-.main-content .contact-form-section .contact-form .form-group input[type="email"]:focus,
-.main-content .contact-form-section .contact-form .form-group textarea:focus {
+.contact-form-section .contact-form .form-group input[type="text"]:focus,
+.contact-form-section .contact-form .form-group input[type="email"]:focus,
+.contact-form-section .contact-form .form-group textarea:focus {
     outline: none;
     border-color: var(--color-acento);
     box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 0.25);
 }
 
-.main-content .contact-form-section .contact-form .form-group textarea {
+.contact-form-section .contact-form .form-group textarea {
     resize: vertical;
 }
 
-.main-content .contact-form-section .contact-form .checkbox-group {
+.contact-form-section .contact-form .checkbox-group {
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
 }
 
-.main-content .contact-form-section .contact-form .checkbox-group input[type="checkbox"] {
+.contact-form-section .contact-form .checkbox-group input[type="checkbox"] {
     transform: scale(1.2);
 }
 
-.main-content .contact-form-section .contact-form .submit-button {
+.contact-form-section .contact-form .submit-button {
     background-color: var(--color-acento);
     color: white;
     padding: 1rem 2.5rem;
@@ -1386,14 +1383,14 @@ main section.grafico-alimentacion .etiqueta {
     align-self: center;
 }
 
-.main-content .contact-form-section .contact-form .submit-button:hover {
-    background-color: var(--color-acento);
+.contact-form-section .contact-form .submit-button:hover {
+    background-color: var(--color-primario);
 }
 
-/**! -------- FIN CSS DE CONTACTO -------- */
+/*! -------- FIN CSS DE CONTACTO -------- */
 
 
-/**? -------- INICIO MEDIA QUERIES DE INDEX -------- */
+/**? -------- INICIO MEDIA QUERYS DE INDEX -------- */
 @media screen and (max-width: 550px) {
     section.perfil {
         padding: 1rem;
@@ -1563,11 +1560,11 @@ main section.grafico-alimentacion .etiqueta {
     }
 }
 
-/**? -------- FIN MEDIA QUERIES DE INDEX -------- */
+/**? -------- FIN MEDIA QUERYS DE INDEX -------- */
 
 
 
-/**? -------- INICIO MEDIA QUERIES DE HÁBITAT -------- */
+/**? -------- INICIO MEDIA QUERYS DE HÁBITAT -------- */
 @media screen and (max-width: 540px) {
     .hero-habitat .imagen-portada-habitat {
         height: 90vh;
@@ -1666,4 +1663,4 @@ main section.grafico-alimentacion .etiqueta {
     }
 }
 
-/**? -------- FIN MEDIA QUERIES DE HÁBITAT -------- */
+/**? -------- FIN MEDIA QUERYS DE HÁBITAT -------- */

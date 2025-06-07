@@ -12,6 +12,15 @@ body {
   color: #1F1F1F;
 }
 
+.main-content {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*! -------- INICIO HEADER -------- */
 header {
   background-color: #66BDE8;
   position: sticky;
@@ -57,7 +66,8 @@ header .navbar.bg-body-tertiary {
   background-color: #66BDE8 !important;
 }
 
-/** -------- INICIO CSS INDEX -------- */
+/*! -------- FIN HEADER -------- */
+/*! -------- INICIO CSS DE INDEX -------- */
 /** -------- SECTION HERO -------- */
 .hero-index {
   position: relative;
@@ -312,7 +322,8 @@ section.perfil .dato .img-circular {
   margin-bottom: 10px;
 }
 
-/** -------- FIN CSS INDEX -------- */
+/*! -------- FIN CSS INDEX -------- */
+/*! -------- INICIO CSS DE HABITAT -------- */
 .hero-habitat {
   min-height: 100vh;
   position: relative;
@@ -624,41 +635,42 @@ section.perfil .dato .img-circular {
   background-color: #00B894;
 }
 
+/*! -------- FIN CSS DE HABITAT -------- */
 /*! -------- INICIO CSS DE ALIMENTACIÓN -------- */
 /* Carousel */
-main .alimentacion-index .carousel-item img {
+.alimentacion-index .carousel-item img {
   max-height: 600px;
   object-fit: cover;
   width: 100%;
 }
-main .alimentacion-index .carousel-caption {
+.alimentacion-index .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 0.5rem;
 }
-main .alimentacion-index .carousel-caption h5,
-main .alimentacion-index .carousel-caption p {
+.alimentacion-index .carousel-caption h5,
+.alimentacion-index .carousel-caption p {
   color: #E6F3F9;
 }
 
 /* Sección de cards */
-main section.alimentacion-detalle {
+.alimentacion-detalle {
   background-color: #E6F3F9;
   padding: 3rem 1rem;
   text-align: center;
 }
-main section.alimentacion-detalle h2 {
+.alimentacion-detalle h2 {
   font-size: 2rem;
   color: #005A87;
   margin-bottom: 2rem;
 }
-main section.alimentacion-detalle .alimentacion-cards {
+.alimentacion-detalle .alimentacion-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
 }
-main section.alimentacion-detalle .card-detalle {
+.alimentacion-detalle .card-detalle {
   background-color: #E6F3F9;
   border: 2px solid #0085C9;
   border-radius: 12px;
@@ -667,35 +679,35 @@ main section.alimentacion-detalle .card-detalle {
   max-width: 300px;
   margin: 0 auto;
 }
-main section.alimentacion-detalle .card-detalle h3 {
+.alimentacion-detalle .card-detalle h3 {
   color: #0085C9;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
-main section.alimentacion-detalle .card-detalle p {
+.alimentacion-detalle .card-detalle p {
   color: #1F1F1F;
   font-size: 1rem;
 }
 
 /* Sección de curiosidades alimenticias */
-main section.alimentacion-curiosidades-detalladas {
+.alimentacion-curiosidades-detalladas {
   background-color: #0085C9;
   padding: 3rem 1rem;
   text-align: center;
 }
-main section.alimentacion-curiosidades-detalladas h2 {
+.alimentacion-curiosidades-detalladas h2 {
   font-size: 2rem;
   color: #E6F3F9;
   margin-bottom: 2rem;
 }
-main section.alimentacion-curiosidades-detalladas .curiosidades-grid {
+.alimentacion-curiosidades-detalladas .curiosidades-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
-main section.alimentacion-curiosidades-detalladas .curiosidad {
+.alimentacion-curiosidades-detalladas .curiosidad {
   background-color: #E6F3F9;
   border-left: 5px solid #66BDE8;
   padding: 1.5rem;
@@ -703,70 +715,70 @@ main section.alimentacion-curiosidades-detalladas .curiosidad {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-main section.alimentacion-curiosidades-detalladas .curiosidad h3 {
+.alimentacion-curiosidades-detalladas .curiosidad h3 {
   color: #0085C9;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-main section.alimentacion-curiosidades-detalladas .curiosidad p {
+.alimentacion-curiosidades-detalladas .curiosidad p {
   color: #1F1F1F;
   font-size: 1rem;
 }
 
 /* Sección "Sabías qué?" */
-main .alimentacion-sabias-que {
+.alimentacion-sabias-que {
   padding: 3rem 1rem;
   background-color: #E6F3F9;
   text-align: center;
 }
-main .alimentacion-sabias-que h2 {
+.alimentacion-sabias-que h2 {
   margin-bottom: 1rem;
 }
-main .alimentacion-sabias-que ul {
+.alimentacion-sabias-que ul {
   list-style: none;
   padding: 0;
   max-width: 600px;
   margin: auto;
 }
-main .alimentacion-sabias-que ul li {
+.alimentacion-sabias-que li {
   margin-bottom: 0.75rem;
   font-size: 1.1rem;
 }
 
 /* Sección de videos */
-main section.videos-alimentacion {
+.videos-alimentacion {
   background-color: #E6F3F9;
   padding: 3rem 1rem;
   text-align: center;
 }
-main section.videos-alimentacion h2 {
+.videos-alimentacion h2 {
   font-size: 2rem;
   color: #005A87;
   margin-bottom: 2rem;
 }
-main section.videos-alimentacion .contenedor-videos {
+.videos-alimentacion .contenedor-videos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
-main section.videos-alimentacion .video {
+.videos-alimentacion .video {
   flex: 1 1 300px;
   max-width: 560px;
 }
 
 /* Sección del gráfico */
-main section.grafico-alimentacion {
+.grafico-alimentacion {
   background-color: #E6F3F9;
   padding: 2rem 1rem;
   text-align: center;
 }
-main section.grafico-alimentacion h2 {
+.grafico-alimentacion h2 {
   color: #005A87;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-main section.grafico-alimentacion .barra {
+.grafico-alimentacion .barra {
   display: flex;
   align-items: center;
   margin: 1rem auto;
@@ -777,38 +789,31 @@ main section.grafico-alimentacion .barra {
   border-radius: 8px;
   overflow: hidden;
 }
-main section.grafico-alimentacion .barra .barra-color {
+.grafico-alimentacion .barra-color {
   height: 100%;
 }
-main section.grafico-alimentacion .barra .plancton {
+.grafico-alimentacion .plancton {
   width: 60%;
   background-color: #0085C9;
 }
-main section.grafico-alimentacion .barra .krill {
+.grafico-alimentacion .krill {
   width: 25%;
   background-color: #005A87;
 }
-main section.grafico-alimentacion .barra .huevos {
+.grafico-alimentacion .huevos {
   width: 15%;
   background-color: #00B894;
 }
-main section.grafico-alimentacion .etiqueta {
+.grafico-alimentacion .etiqueta {
   margin-left: 1rem;
   font-weight: bold;
   color: #1F1F1F;
 }
 
 /*! -------- FIN CSS DE ALIMENTACIÓN -------- */
-/** -------- INICIO CSS DE CURIOSIDADES -------- */
-.main-content {
-  padding-top: 20px;
-  padding-bottom: 40px;
-  /* Sección HERO de Curiosidades */
-  /* Sección Curiosidades Destacadas */
-  /* Sección Curiosidades en Detalle */
-  /* Sección Llamado a la Acción */
-}
-.main-content .hero-curiosidades {
+/*! -------- INICIO CSS DE CONTACTO -------- */
+/* Sección HERO de Curiosidades */
+.hero-curiosidades {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -820,15 +825,13 @@ main section.grafico-alimentacion .etiqueta {
   overflow: hidden;
   background: linear-gradient(135deg, #0085C9, #005A87);
 }
-.main-content .hero-curiosidades .hero-container {
+.hero-curiosidades .hero-container {
   z-index: 2;
   /* Asegura que el texto esté por encima de la imagen */
   max-width: 800px;
   margin-bottom: 2rem;
-  position: relative;
-  /* Necesario para que z-index funcione correctamente */
 }
-.main-content .hero-curiosidades .hero-container h1 {
+.hero-curiosidades .hero-container h1 {
   color: #E6F3F9;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -836,13 +839,13 @@ main section.grafico-alimentacion .etiqueta {
   font-weight: 700;
   letter-spacing: 1.5px;
 }
-.main-content .hero-curiosidades .hero-container .subtitulo {
+.hero-curiosidades .hero-container .subtitulo {
   color: #E6F3F9;
   font-size: 1.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   line-height: 1.4;
 }
-.main-content .hero-curiosidades .imagen-hero {
+.hero-curiosidades .imagen-hero {
   position: absolute;
   top: 0;
   left: 0;
@@ -851,11 +854,8 @@ main section.grafico-alimentacion .etiqueta {
   overflow: hidden;
   z-index: 1;
   /* Coloca la imagen detrás del texto */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.main-content .hero-curiosidades .imagen-hero img {
+.hero-curiosidades .imagen-hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -863,24 +863,26 @@ main section.grafico-alimentacion .etiqueta {
   opacity: 0.3;
   /* Hace la imagen más sutil para que el texto sea legible */
 }
-.main-content .curiosidades-destacadas {
+
+/* Sección Curiosidades Destacadas */
+.curiosidades-destacadas {
   padding: 4rem 1rem;
   background-color: white;
   text-align: center;
 }
-.main-content .curiosidades-destacadas h2 {
+.curiosidades-destacadas h2 {
   color: #0085C9;
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
-.main-content .curiosidades-destacadas .grid-destacados {
+.curiosidades-destacadas .grid-destacados {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
-.main-content .curiosidades-destacadas .destacado-card {
+.curiosidades-destacadas .destacado-card {
   background-color: #E6F3F9;
   border-radius: 1rem;
   padding: 2rem;
@@ -892,35 +894,39 @@ main section.grafico-alimentacion .etiqueta {
   text-align: center;
   height: 100%;
 }
-.main-content .curiosidades-destacadas .destacado-card:hover {
+.curiosidades-destacadas .destacado-card:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  /* Efecto al pasar el mouse */
 }
-.main-content .curiosidades-destacadas .destacado-card i {
+.curiosidades-destacadas .destacado-card i {
   font-size: 3rem;
+  /* Tamaño de los iconos */
   color: #00B894;
   margin-bottom: 1.5rem;
 }
-.main-content .curiosidades-destacadas .destacado-card h3 {
+.curiosidades-destacadas .destacado-card h3 {
   color: #005A87;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-.main-content .curiosidades-destacadas .destacado-card p {
+.curiosidades-destacadas .destacado-card p {
   color: #1F1F1F;
   font-size: 1rem;
   line-height: 1.6;
 }
-.main-content .curiosidades-en-detalle {
+
+/* Sección Curiosidades en Detalle */
+.curiosidades-en-detalle {
   padding: 4rem 1rem;
   background-color: #E6F3F9;
 }
-.main-content .curiosidades-en-detalle h2 {
+.curiosidades-en-detalle h2 {
   color: #0085C9;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
 }
-.main-content .curiosidades-en-detalle .detalle {
+.curiosidades-en-detalle .detalle {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -932,57 +938,59 @@ main section.grafico-alimentacion .etiqueta {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
-.main-content .curiosidades-en-detalle .detalle .texto-detalle {
+.curiosidades-en-detalle .detalle .texto-detalle {
   flex: 1;
   padding: 2.5rem;
 }
-.main-content .curiosidades-en-detalle .detalle .texto-detalle h3 {
+.curiosidades-en-detalle .detalle .texto-detalle h3 {
   color: #005A87;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.main-content .curiosidades-en-detalle .detalle .texto-detalle p {
+.curiosidades-en-detalle .detalle .texto-detalle p {
   color: #1F1F1F;
   font-size: 1.1rem;
   line-height: 1.7;
 }
-.main-content .curiosidades-en-detalle .detalle .imagen-detalle {
+.curiosidades-en-detalle .detalle .imagen-detalle {
   flex: 1;
   min-width: 300px;
   height: 300px;
   overflow: hidden;
 }
-.main-content .curiosidades-en-detalle .detalle .imagen-detalle img {
+.curiosidades-en-detalle .detalle .imagen-detalle img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   display: block;
 }
-.main-content .curiosidades-en-detalle .detalle.reverse {
+.curiosidades-en-detalle .detalle.reverse {
   flex-direction: row-reverse;
 }
-.main-content .llamado-accion {
+
+/* Sección Llamado a la Acción */
+.llamado-accion {
   background-color: #0085C9;
   color: white;
   padding: 4rem 1rem;
   text-align: center;
 }
-.main-content .llamado-accion .cta-container {
+.llamado-accion .cta-container {
   max-width: 800px;
   margin: 0 auto;
 }
-.main-content .llamado-accion h2 {
+.llamado-accion h2 {
   color: white;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
-.main-content .llamado-accion p {
+.llamado-accion p {
   color: white;
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
-.main-content .llamado-accion .btn {
+.llamado-accion .btn {
   background-color: #00B894;
   color: white;
   padding: 0.8rem 2rem;
@@ -991,14 +999,180 @@ main section.grafico-alimentacion .etiqueta {
   font-weight: bold;
   border: none;
   /* Quita el borde por defecto de Bootstrap */
-  transition: background-color 0.3s ease;
 }
-.main-content .llamado-accion .btn:hover {
+.llamado-accion .btn:hover {
   background-color: #66BDE8;
   color: white;
 }
 
-/** -------- FIN CSS DE CURIOSIDADES -------- */
+/*! -------- FIN CSS DE CURIOSIDADES -------- */
+/*! -------- INICIO CSS DE CONTACTO -------- */
+/* Sección HERO de Contacto */
+.hero-contact {
+  background-color: #0085C9;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.hero-contact .hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero-contact .hero-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.hero-contact .hero-container .subtitulo {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-info-section-top {
+  background-color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.contact-info-section-top .info-block-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contact-info-section-top .info-block {
+  background-color: #E6F3F9;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+.contact-info-section-top .info-block h3 {
+  color: #005A87;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.contact-info-section-top .info-block p {
+  color: #1F1F1F;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+.contact-info-section-top .info-block .info-link {
+  color: #00B894;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+}
+.contact-info-section-top .info-block .info-link:hover {
+  text-decoration: underline;
+}
+.contact-info-section-top .info-block .social-links-inline {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact-info-section-top .info-block .social-links-inline img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0.8) sepia(1) saturate(5) hue-rotate(160deg);
+}
+.contact-info-section-top .info-block .social-links-inline img:hover {
+  filter: brightness(1) sepia(1) saturate(5) hue-rotate(160deg);
+}
+
+/* Sección del Formulario de Contacto */
+.contact-form-section {
+  background-color: #E6F3F9;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form-section .form-wrapper {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+.contact-form-section .form-wrapper h2 {
+  color: #005A87;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.contact-form-section .form-wrapper .form-description {
+  color: #1F1F1F;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+.contact-form-section .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+.contact-form-section .contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form-section .contact-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1F1F1F;
+}
+.contact-form-section .contact-form .form-group input[type=text],
+.contact-form-section .contact-form .form-group input[type=email],
+.contact-form-section .contact-form .form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #66BDE8;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #1F1F1F;
+  background-color: #f8fcfc;
+}
+.contact-form-section .contact-form .form-group input[type=text]:focus,
+.contact-form-section .contact-form .form-group input[type=email]:focus,
+.contact-form-section .contact-form .form-group textarea:focus {
+  outline: none;
+  border-color: #00B894;
+  box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 0.25);
+}
+.contact-form-section .contact-form .form-group textarea {
+  resize: vertical;
+}
+.contact-form-section .contact-form .checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact-form-section .contact-form .checkbox-group input[type=checkbox] {
+  transform: scale(1.2);
+}
+.contact-form-section .contact-form .submit-button {
+  background-color: #00B894;
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+}
+.contact-form-section .contact-form .submit-button:hover {
+  background-color: #0085C9;
+}
+
+/*! -------- FIN CSS DE CONTACTO -------- */
+/*! -------- FOOTER -------- */
 footer {
   background-color: #005A87;
   color: #ffffff;
@@ -1010,5 +1184,7 @@ footer img {
   margin-bottom: 10px;
   height: 30px;
 }
+
+/*! -------- FIN FOOTER -------- */
 
 /*# sourceMappingURL=estilos.css.map */
