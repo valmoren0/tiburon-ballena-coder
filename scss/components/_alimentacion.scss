@@ -1,0 +1,204 @@
+/*! -------- INICIO CSS DE ALIMENTACIÓN -------- */
+/* Carousel */
+main .alimentacion-index {
+    .carousel-item {
+        img {
+            max-height: 600px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        h5,
+        p {
+            color: $color-fondo;
+        }
+    }
+}
+
+/* Sección de cards */
+main section.alimentacion-detalle {
+    background-color: $color-fondo;
+    padding: 3rem 1rem;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        color: $color-secundario;
+        margin-bottom: 2rem;
+    }
+
+    .alimentacion-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .card-detalle {
+        background-color: $color-fondo;
+        border: 2px solid $color-primario;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        margin: 0 auto;
+
+        h3 {
+            color: $color-primario;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            color: $color-texto;
+            font-size: 1rem;
+        }
+    }
+}
+
+/* Sección de curiosidades alimenticias */
+main section.alimentacion-curiosidades-detalladas {
+    background-color: $color-primario;
+    padding: 3rem 1rem;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        color: $color-fondo;
+        margin-bottom: 2rem;
+    }
+
+    .curiosidades-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .curiosidad {
+        background-color: $color-fondo;
+        border-left: 5px solid $color-terciario;
+        padding: 1.5rem;
+        text-align: left;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+        h3 {
+            color: $color-primario;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: $color-texto;
+            font-size: 1rem;
+        }
+    }
+}
+
+/* Sección "Sabías qué?" */
+main .alimentacion-sabias-que {
+    padding: 3rem 1rem;
+    background-color: $color-fondo;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        max-width: 600px;
+        margin: auto;
+
+        li {
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+/* Sección de videos */
+main section.videos-alimentacion {
+    background-color: $color-fondo;
+    padding: 3rem 1rem;
+    text-align: center;
+
+    h2 {
+        font-size: 2rem;
+        color: $color-secundario;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-videos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .video {
+        flex: 1 1 300px;
+        max-width: 560px;
+    }
+}
+
+/* Sección del gráfico */
+main section.grafico-alimentacion {
+    background-color: $color-fondo;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    h2 {
+        color: $color-secundario;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .barra {
+        display: flex;
+        align-items: center;
+        margin: 1rem auto;
+        max-width: 600px;
+        height: 30px;
+        position: relative;
+        background-color: $color-fondo;
+        border-radius: 8px;
+        overflow: hidden;
+
+        .barra-color {
+            height: 100%;
+        }
+
+        .plancton {
+            width: 60%;
+            background-color: $color-primario;
+        }
+
+        .krill {
+            width: 25%;
+            background-color: $color-secundario;
+        }
+
+        .huevos {
+            width: 15%;
+            background-color: $color-acento;
+        }
+    }
+
+    .etiqueta {
+        margin-left: 1rem;
+        font-weight: bold;
+        color: $color-texto;
+    }
+}
+
+/*! -------- FIN CSS DE ALIMENTACIÓN -------- */
