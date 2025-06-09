@@ -23,6 +23,7 @@
     --color-secundario: #005A87;
     --color-terciario: #66BDE8;
     --color-fondo: #E6F3F9;
+    --color-blanco: #ffffff;
     --color-acento: #00B894;
     --color-texto: #1F1F1F;
 }
@@ -1029,7 +1030,7 @@ section.grafico-alimentacion .etiqueta {
     height: 100%;
     object-fit: cover;
     /* Cubre el espacio sin distorsionar */
-    opacity: 0.3;
+    opacity: 0.2;
     /* Hace la imagen más sutil para que el texto sea legible */
 }
 
@@ -1199,27 +1200,65 @@ section.grafico-alimentacion .etiqueta {
 
 /*! -------- INICIO CSS DE CONTACTO -------- */
 /* Sección HERO de Contacto */
-.hero-contact { 
-    background-color: var(--color-primario);
+.hero-contact {
+    position: relative;
+    overflow: hidden;
     color: white;
-    padding: 4rem 1rem;
+    padding: 2.5rem 1rem;
     text-align: center;
+    min-height: 35vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 70vh;
+
+    /* Gradiente animado para el hero de contacto */
+    background: linear-gradient(90deg, var(--color-primario), #333333, var(--color-primario));
+    background-size: 300% 100%;
+    animation: gradientShift 10s ease infinite alternate;
 }
 
 .hero-contact .hero-container {
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+    min-height: auto;
+    z-index: 2;
+    position: relative;
 }
 
 .hero-contact .hero-container h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem;
     color: white;
+    line-height: 1.2;
 }
 
 .hero-contact .hero-container .subtitulo {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.hero-contact img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Animación del gradiente para el hero de contacto */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .contact-info-section-top {
@@ -1289,8 +1328,8 @@ section.grafico-alimentacion .etiqueta {
     filter: brightness(1) sepia(1) saturate(5) hue-rotate(160deg);
 }
 
-/* Sección del Formulario de Contacto */
-.contact-form-section { 
+/* -------- Sección Formulario de Contacto -------- */
+.contact-form-section {
     background-color: var(--color-fondo);
     padding: 4rem 1rem;
     display: flex;
@@ -1385,6 +1424,116 @@ section.grafico-alimentacion .etiqueta {
 
 .contact-form-section .contact-form .submit-button:hover {
     background-color: var(--color-primario);
+}
+
+/* -------- Sección FAQ con acordeón Bootstrap flush -------- */
+.faq-section {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.accordion-flush {
+    border: none;
+}
+
+.accordion-flush .accordion-item {
+    border-bottom: 1px solid var(--color-terciario);
+}
+
+.accordion-flush .accordion-button {
+    background-color: transparent;
+    color: var(--color-secundario);
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    box-shadow: none;
+}
+
+.accordion-flush .accordion-button:not(.collapsed) {
+    background-color: var(--color-primario);
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-flush .accordion-button::after {
+    filter: invert(40%) sepia(100%) saturate(500%) hue-rotate(160deg);
+}
+
+.accordion-flush .accordion-button:not(.collapsed)::after {
+    filter: invert(100%) sepia(0) saturate(0) hue-rotate(0deg);
+}
+
+.accordion-flush .accordion-body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    border-top: none;
+}
+
+/* -------- Sección mapa -------- */
+.content-section {
+    background-color: var(--color-blanco);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.content-section:nth-of-type(odd) {
+    background-color: var(--color-fondo);
+}
+
+.content-section h2 {
+    color: var(--color-secundario);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-section .section-description {
+    color: var(--color-texto);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-general {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.map-placeholder {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.map-placeholder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-placeholder p {
+    margin-top: 1.5rem;
+    color: var(--color-texto);
+    font-size: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /*! -------- FIN CSS DE CONTACTO -------- */
@@ -1564,12 +1713,81 @@ section.grafico-alimentacion .etiqueta {
 
 
 
-/**? -------- INICIO MEDIA QUERYS DE HÁBITAT -------- */
-@media screen and (max-width: 540px) {
+/**? -- INICIO MEDIA QUERYS DE HÁBITAT -- */
+
+.hero-habitat {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-habitat .imagen-portada-habitat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
+@media screen and (max-width: 380px) {
+    .hero-habitat {
+        min-height: 150px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .contenido-habitat-hero h1 {
+        font-size: 1.1rem;
+    }
+
+    .contenido-habitat-hero h2 {
+        font-size: 0.8rem;
+    }
+
+    .contenido-habitat-hero p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-habitat {
+        min-height: 180px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     .hero-habitat .imagen-portada-habitat {
-        height: 90vh;
-        object-fit: cover;
-        object-position: center;
+        object-position: center 10%;
+    }
+
+    .contenido-habitat-hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .contenido-habitat-hero h2 {
+        font-size: 0.9rem;
+    }
+
+    .contenido-habitat-hero p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .hero-habitat {
+        min-height: 220px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .contenido-habitat-hero h1 {
@@ -1586,10 +1804,15 @@ section.grafico-alimentacion .etiqueta {
 }
 
 @media screen and (max-width: 620px) {
+    .hero-habitat {
+        height: auto;
+        min-height: 280px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     .hero-habitat .imagen-portada-habitat {
-        height: 100vh;
-        object-fit: cover;
-        object-position: center;
+        object-position: center 20%;
     }
 
     .contenido-habitat-hero h1 {
@@ -1605,10 +1828,20 @@ section.grafico-alimentacion .etiqueta {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .hero-habitat {
+        min-height: 45vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 1330px) {
     .hero-habitat {
-        min-height: auto;
+        height: auto;
+        min-height: 60vh;
         padding-top: 60px;
+        padding-bottom: 60px;
         justify-content: center;
     }
 
@@ -1654,13 +1887,511 @@ section.grafico-alimentacion .etiqueta {
         grid-row: span 1 !important;
     }
 
-    .grid-galeria .titulo-galeria {
-        font-size: 1.5rem;
-    }
-
     .grid-galeria .contenedor-imagenes img {
         height: 180px;
     }
+
+    .grid-galeria .titulo-galeria {
+        font-size: 1.5rem;
+    }
 }
 
-/**? -------- FIN MEDIA QUERYS DE HÁBITAT -------- */
+/**? -- FIN MEDIA QUERYS DE HÁBITAT -- */
+
+
+/**? INICIO MEDIA QUERYS DE ALIMENTACIÓN */
+
+@media screen and (max-width: 350px) {
+
+    section.alimentacion-detalle h2,
+    section.alimentacion-curiosidades-detalladas h2,
+    .alimentacion-sabias-que h2,
+    section.videos-alimentacion h2,
+    section.grafico-alimentacion h2 {
+        font-size: 1.3rem;
+    }
+
+    section.alimentacion-detalle .card-detalle h3,
+    section.alimentacion-curiosidades-detalladas .curiosidad h3 {
+        font-size: 1rem;
+    }
+
+    section.alimentacion-detalle .card-detalle p,
+    section.alimentacion-curiosidades-detalladas .curiosidad p,
+    .alimentacion-sabias-que li {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    section.alimentacion-detalle h2,
+    section.alimentacion-curiosidades-detalladas h2,
+    .alimentacion-sabias-que h2,
+    section.videos-alimentacion h2,
+    section.grafico-alimentacion h2 {
+        font-size: 1.5rem;
+    }
+
+    section.alimentacion-detalle .card-detalle {
+        padding: 0.75rem;
+    }
+
+    section.alimentacion-curiosidades-detalladas .curiosidad {
+        padding: 0.75rem;
+    }
+
+    section.grafico-alimentacion .barra {
+        height: 20px;
+    }
+
+    section.grafico-alimentacion .etiqueta {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    section.alimentacion-detalle {
+        padding: 2rem 0.5rem;
+    }
+
+    section.alimentacion-detalle h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section.alimentacion-detalle .card-detalle {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    section.alimentacion-detalle .card-detalle h3 {
+        font-size: 1.1rem;
+    }
+
+    section.alimentacion-detalle .card-detalle p {
+        font-size: 0.9rem;
+    }
+
+    section.alimentacion-curiosidades-detalladas {
+        padding: 2rem 0.5rem;
+    }
+
+    section.alimentacion-curiosidades-detalladas h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section.alimentacion-curiosidades-detalladas .curiosidad {
+        padding: 1rem;
+    }
+
+    section.alimentacion-curiosidades-detalladas .curiosidad h3 {
+        font-size: 1.1rem;
+    }
+
+    section.alimentacion-curiosidades-detalladas .curiosidad p {
+        font-size: 0.9rem;
+    }
+
+    .alimentacion-sabias-que {
+        padding: 2rem 0.5rem;
+    }
+
+    .alimentacion-sabias-que h2 {
+        font-size: 1.75rem;
+    }
+
+    .alimentacion-sabias-que li {
+        font-size: 1rem;
+    }
+
+    section.videos-alimentacion {
+        padding: 2rem 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    section.videos-alimentacion h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section.videos-alimentacion .contenedor-videos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    section.videos-alimentacion .video {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    section.videos-alimentacion .video iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    section.grafico-alimentacion {
+        padding: 1.5rem 0.5rem;
+    }
+
+    section.grafico-alimentacion h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section.grafico-alimentacion .barra {
+        height: 25px;
+    }
+
+    section.grafico-alimentacion .etiqueta {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.videos-alimentacion .contenedor-videos {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    section.videos-alimentacion .video {
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    section.videos-alimentacion .video iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/**? FIN MEDIA QUERYS DE ALIMENTACIÓN */
+
+/**? INICIO MEDIA QUERYS DE CURIOSIDADES */
+
+@media screen and (max-width: 350px) {
+    .hero-curiosidades {
+        min-height: 50vh;
+        padding: 1rem 0.5rem;
+    }
+
+    .hero-curiosidades .hero-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-curiosidades .hero-container .subtitulo {
+        font-size: 0.8rem;
+    }
+
+    .curiosidades-destacadas h2,
+    .curiosidades-en-detalle h2,
+    .llamado-accion h2 {
+        font-size: 1.3rem;
+    }
+
+    .curiosidades-destacadas .destacado-card {
+        padding: 1rem;
+    }
+
+    .curiosidades-destacadas .destacado-card p {
+        font-size: 0.85rem;
+    }
+
+    .curiosidades-en-detalle .detalle .texto-detalle p {
+        font-size: 0.85rem;
+    }
+
+    .llamado-accion p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-curiosidades {
+        min-height: 60vh;
+        padding: 1.5rem 0.75rem;
+    }
+
+    .hero-curiosidades .hero-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-curiosidades .hero-container .subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .curiosidades-destacadas h2,
+    .curiosidades-en-detalle h2,
+    .llamado-accion h2 {
+        font-size: 1.5rem;
+    }
+
+    .curiosidades-destacadas .destacado-card i {
+        font-size: 2.5rem;
+    }
+
+    .curiosidades-destacadas .destacado-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .curiosidades-en-detalle .detalle .imagen-detalle {
+        height: 200px;
+    }
+
+    .llamado-accion .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-curiosidades {
+        min-height: 70vh;
+        padding: 2rem 1rem;
+    }
+
+    .hero-curiosidades .hero-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-curiosidades .hero-container .subtitulo {
+        font-size: 1rem;
+    }
+
+    .curiosidades-destacadas h2,
+    .curiosidades-en-detalle h2,
+    .llamado-accion h2 {
+        font-size: 1.8rem;
+    }
+
+    .curiosidades-destacadas .destacado-card {
+        padding: 1.5rem;
+    }
+
+    .curiosidades-destacadas .destacado-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .curiosidades-destacadas .destacado-card p {
+        font-size: 0.9rem;
+    }
+
+    .curiosidades-en-detalle .detalle .texto-detalle {
+        padding: 1rem;
+    }
+
+    .curiosidades-en-detalle .detalle .texto-detalle h3 {
+        font-size: 1.5rem;
+    }
+
+    .curiosidades-en-detalle .detalle .texto-detalle p {
+        font-size: 0.9rem;
+    }
+
+    .llamado-accion p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .curiosidades-en-detalle .detalle {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .curiosidades-en-detalle .detalle.reverse {
+        flex-direction: column;
+    }
+
+    .curiosidades-en-detalle .detalle .texto-detalle {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .curiosidades-en-detalle .detalle .texto-detalle h3 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .curiosidades-en-detalle .detalle .texto-detalle p {
+        font-size: 1rem;
+    }
+
+    .curiosidades-en-detalle .detalle .imagen-detalle {
+        width: 100%;
+        min-width: auto;
+        height: 250px;
+    }
+
+    .curiosidades-destacadas h2,
+    .curiosidades-en-detalle h2,
+    .llamado-accion h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .curiosidades-destacadas {
+        padding: 3rem 0.75rem;
+    }
+}
+
+/**? FIN MEDIA QUERYS DE CURIOSIDADES */
+
+/**? INICIO MEDIA QUERYS DE CONTACTO */
+@media (max-width: 350px) {
+    .info-block-container {
+        padding: 20px 10px;
+    }
+
+    .contact-info-section-top .info-block h3 {
+        font-size: 1rem;
+    }
+
+    .contact-info-section-top .info-block p {
+        font-size: 0.85rem;
+    }
+
+    .faq-section {
+        padding: 1rem;
+    }
+
+    .faq-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .accordion-flush .accordion-body {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-block-container {
+        padding: 20px;
+    }
+
+    .contact-info-section-top .info-block h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info-section-top .info-block p {
+        font-size: 1rem;
+    }
+
+    .faq-section {
+        padding: 1.5rem;
+    }
+
+    .accordion-flush .accordion-item {
+        margin-bottom: 1.2rem;
+    }
+
+    .accordion-flush .accordion-button {
+        font-size: 1.1rem;
+    }
+
+    .accordion-flush .accordion-body {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-contact .hero-container h1 {
+        font-size: 36px;
+    }
+
+    .info-block-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .contact-info-section-top .info-block {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-block-container {
+        grid-template-columns: 1fr;
+        padding: 20px 30px;
+    }
+
+    .faq-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .accordion-flush .accordion-button {
+        font-size: 1.2rem;
+    }
+
+    .accordion-flush .accordion-body {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .info-block-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-section-top {
+        padding: 2rem 1rem;
+    }
+
+    .contact-info-section-top .info-block h3 {
+        font-size: 1.6rem;
+    }
+
+    .contact-info-section-top .info-block p {
+        font-size: 1.1rem;
+    }
+
+    .faq-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-info-section-top .info-block-container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-section {
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .accordion-flush .accordion-item {
+        text-align: left;
+        padding: 1rem;
+        background-color: #f9f9f9;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .accordion-flush .accordion-button {
+        margin-bottom: 0.5rem;
+    }
+
+    .accordion-flush .accordion-body {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-contact .hero-container h1 {
+        font-size: 48px;
+    }
+}
+
+/**? FIN MEDIA QUERYS DE CONTACTO */

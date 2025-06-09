@@ -1,11 +1,13 @@
-/*! -------- INICIO CSS DE ALIMENTACIÓN -------- */
+/*! -------- INICIO SCSS DE ALIMENTACIÓN -------- */
 
 /* Carousel */
 .alimentacion-index {
-    .carousel-item img {
-        max-height: 600px;
-        object-fit: cover;
-        width: 100%;
+    .carousel-item {
+        img {
+            max-height: 600px;
+            object-fit: cover;
+            width: 100%;
+        }
     }
 
     .carousel-caption {
@@ -117,11 +119,11 @@
         padding: 0;
         max-width: 600px;
         margin: auto;
-    }
 
-    li {
-        margin-bottom: 0.75rem;
-        font-size: 1.1rem;
+        li {
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
     }
 }
 
@@ -169,28 +171,28 @@
         max-width: 600px;
         height: 30px;
         position: relative;
-        background-color: $color-fondo;
+        background-color: $color-fondo; // Usado para el fondo de la barra en sí
         border-radius: 8px;
         overflow: hidden;
-    }
 
-    .barra-color {
-        height: 100%;
-    }
+        .barra-color {
+            height: 100%;
+        }
 
-    .plancton {
-        width: 60%;
-        background-color: $color-primario;
-    }
+        .plancton {
+            width: 60%;
+            background-color: $color-primario;
+        }
 
-    .krill {
-        width: 25%;
-        background-color: $color-secundario;
-    }
+        .krill {
+            width: 25%;
+            background-color: $color-secundario;
+        }
 
-    .huevos {
-        width: 15%;
-        background-color: $color-acento;
+        .huevos {
+            width: 15%;
+            background-color: $color-acento;
+        }
     }
 
     .etiqueta {
@@ -200,4 +202,4 @@
     }
 }
 
-/*! -------- FIN CSS DE ALIMENTACIÓN -------- */
+/*! -------- FIN SCSS DE ALIMENTACIÓN -------- */

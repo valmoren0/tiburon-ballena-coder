@@ -1,9 +1,9 @@
-<!-- contacto.html -->
 <!DOCTYPE html>
 <html lang="es">
 
-<head> <!--Cabeza (Configuración)-->
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header> <!--Barra de navegación con bootstrap-->
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -114,9 +114,108 @@
             </div>
         </section>
 
+        <section class="faq-section content-section">
+            <div class="container-general">
+                <h2>Preguntas Frecuentes</h2>
+                <p class="section-description">Aquí respondemos algunas de las dudas más comunes sobre el Tiburón
+                    Ballena.</p>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ¿Dónde se pueden encontrar los tiburones ballena?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Los tiburones ballena se encuentran en aguas tropicales y templadas de todo el mundo,
+                                prefiriendo las zonas con alta disponibilidad de plancton, como la Gran Barrera de Coral
+                                en Australia, las Islas Galápagos en Ecuador, o las costas de México y Filipinas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ¿De qué se alimentan los tiburones ballena?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                A pesar de su tamaño, los tiburones ballena son filtradores. Se alimentan principalmente
+                                de plancton, pequeños peces y huevos de peces, que capturan abriendo su enorme boca
+                                mientras nadan.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ¿Son peligrosos para los humanos?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                No, los tiburones ballena son criaturas muy dóciles y no representan ningún peligro para
+                                los humanos. De hecho, a menudo se permite nadar con ellos en excursiones de ecoturismo
+                                responsable.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                ¿Cuál es el estado de conservación del tiburón ballena?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Actualmente, el tiburón ballena está clasificado como "En Peligro" (Endangered) por la
+                                UICN, principalmente debido a la pesca, el tráfico marítimo y la contaminación. Es
+                                crucial apoyar los esfuerzos de conservación para proteger a esta especie.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="location-section content-section">
+            <div class="container-general">
+                <h2>Nuestra Ubicación Virtual</h2>
+                <p class="section-description">Aunque somos un proyecto digital, nuestra pasión por el tiburón ballena
+                    nos conecta con el mundo entero.</p>
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15257962.774438318!2d-110.3541624!3d17.8227653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e2e717a6c9d5%3A0x6b876a3e6f9b1d9c!2sOaxaca!5e0!3m2!1ses-419!2sar!4v1717804473873!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Encuéntranos en cualquier dispositivo, en cualquier parte del planeta. Nuestro sitio es tu
+                        ventana al mundo del tiburón ballena.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer> <!-- Footer -->
-        <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="logo de instagram"></a>
+    <footer> <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="logo de instagram"></a>
         <a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="logo de facebook"></a>
         <a href="https://x.com"><img src="../img/x.png" alt="logo de x"></a>
         <p>&copy; 2025 Sitio sobre el Tiburón Ballena. Proyecto educativo.</p>

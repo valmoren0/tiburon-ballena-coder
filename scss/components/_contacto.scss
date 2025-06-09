@@ -1,31 +1,68 @@
-/*! -------- INICIO CSS DE CONTACTO -------- */
+/*! -------- INICIO SCSS DE CONTACTO -------- */
 
 /* Sección HERO de Contacto */
 .hero-contact {
-    background-color: $color-primario;
-    color: white;
-    padding: 4rem 1rem;
+    position: relative;
+    overflow: hidden;
+    color: $color-blanco;
+    padding: 2.5rem 1rem;
     text-align: center;
+    min-height: 35vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 70vh;
+
+    background: linear-gradient(90deg, $color-primario, #333333, $color-primario);
+    background-size: 300% 100%;
+    animation: gradientShift 10s ease infinite alternate;
 
     .hero-container {
         max-width: 900px;
         margin: 0 auto;
+        width: 100%;
+        padding: 0 1rem;
+        min-height: auto;
+        z-index: 2;
+        position: relative;
 
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: white;
+            font-size: 3.2rem;
+            margin-bottom: 0.8rem;
+            color: $color-blanco;
+            line-height: 1.2;
         }
 
         .subtitulo {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            margin-bottom: 0;
         }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/* Animación del gradiente para el hero de contacto */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
     }
 }
 
 .contact-info-section-top {
-    background-color: white;
+    background-color: $color-blanco;
     padding: 4rem 1rem;
     text-align: center;
 
@@ -82,16 +119,16 @@
                 width: 35px;
                 height: 35px;
                 filter: brightness(0.8) sepia(1) saturate(5) hue-rotate(160deg);
-            }
 
-            img:hover {
-                filter: brightness(1) sepia(1) saturate(5) hue-rotate(160deg);
+                &:hover {
+                    filter: brightness(1) sepia(1) saturate(5) hue-rotate(160deg);
+                }
             }
         }
     }
 }
 
-/* Sección del Formulario de Contacto */
+/* -------- Sección Formulario de Contacto -------- */
 .contact-form-section {
     background-color: $color-fondo;
     padding: 4rem 1rem;
@@ -100,7 +137,7 @@
     align-items: center;
 
     .form-wrapper {
-        background-color: white;
+        background-color: $color-blanco;
         padding: 3rem;
         border-radius: 1rem;
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
@@ -141,7 +178,7 @@
             input[type="email"],
             textarea {
                 padding: 0.8rem;
-                border: 1px solid $color-terciario;
+                border: 1px solid $color-border-form-control;
                 border-radius: 0.5rem;
                 font-size: 1rem;
                 color: $color-texto;
@@ -150,7 +187,7 @@
                 &:focus {
                     outline: none;
                     border-color: $color-acento;
-                    box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 0.25);
+                    box-shadow: 0 0 0 0.2rem rgba($color-acento, 0.25);
                 }
             }
 
@@ -171,7 +208,7 @@
 
         .submit-button {
             background-color: $color-acento;
-            color: white;
+            color: $color-blanco;
             padding: 1rem 2.5rem;
             border: none;
             border-radius: 0.5rem;
@@ -187,4 +224,115 @@
     }
 }
 
-/*! -------- FIN CSS DE CONTACTO -------- */
+/* -------- Sección FAQ con acordeón Bootstrap flush -------- */
+.faq-section {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+
+
+    .accordion-flush {
+        border: none;
+
+        .accordion-item {
+            border-bottom: 1px solid $color-terciario;
+        }
+
+        .accordion-button {
+            background-color: transparent;
+            color: $color-secundario;
+            font-weight: 600;
+            font-family: $fuente-quicksand;
+            font-size: 1.2rem;
+            padding: 1rem 1.5rem;
+            box-shadow: none;
+
+            &:not(.collapsed) {
+                background-color: $color-primario;
+                color: $color-blanco;
+                box-shadow: none;
+            }
+
+            &::after {
+                filter: invert(40%) sepia(100%) saturate(500%) hue-rotate(160deg);
+            }
+
+            &:not(.collapsed)::after {
+                filter: invert(100%) sepia(0) saturate(0) hue-rotate(0deg);
+            }
+        }
+
+        .accordion-body {
+            background-color: $color-fondo;
+            color: $color-texto;
+            font-family: $fuente-quicksand;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: 1rem 1.5rem 1.5rem 1.5rem;
+            border-top: none;
+        }
+    }
+}
+
+/* -------- Sección mapa -------- */
+.content-section {
+    background-color: $color-blanco;
+    padding: 4rem 1rem;
+    text-align: center;
+
+    &:nth-of-type(odd) {
+        background-color: $color-fondo;
+    }
+
+    h2 {
+        color: $color-secundario;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-description {
+        color: $color-texto;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.container-general {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.map-placeholder {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    p {
+        margin-top: 1.5rem;
+        color: $color-texto;
+        font-size: 1rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/*! -------- FIN SCSS DE CONTACTO -------- */

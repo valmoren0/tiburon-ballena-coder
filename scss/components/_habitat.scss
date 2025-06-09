@@ -1,5 +1,6 @@
-/*! -------- INICIO CSS DE HABITAT -------- */
-//SECCIÓN HERO 
+/*! -------- INICIO SCSS DE HÁBITAT -------- */
+
+/** -------- SECCIÓN HERO -------- */
 .hero-habitat {
     min-height: 100vh;
     position: relative;
@@ -31,7 +32,7 @@
         align-items: center;
 
         h1 {
-            color: white;
+            color: $color-blanco;
             font-size: 3rem;
             text-transform: uppercase;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
@@ -40,7 +41,7 @@
         }
 
         h2 {
-            color: white;
+            color: $color-blanco;
             font-size: 1.5rem;
             font-weight: 600;
             max-width: 600px;
@@ -48,7 +49,7 @@
         }
 
         p {
-            color: white;
+            color: $color-blanco;
             font-size: 1rem;
             max-width: 600px;
             margin: 0 auto;
@@ -62,21 +63,21 @@
         justify-content: center;
         margin: 10px;
         padding-bottom: 70px;
+    }
 
-        .boton-habitat {
-            z-index: 2;
-            padding: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            background-color: $color-acento;
-            color: white;
-            text-align: center;
+    .boton-habitat {
+        z-index: 2;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: $color-acento;
+        color: $color-blanco;
+        text-align: center;
 
-            &:hover {
-                background-color: $color-secundario;
-            }
+        &:hover {
+            background-color: $color-secundario;
         }
     }
 }
@@ -180,7 +181,7 @@
 /** -------- SECCIÓN CARACTERÍSTICAS -------- */
 .caracteristicas {
     background-color: $color-terciario;
-    color: white;
+    color: $color-blanco;
     text-align: center;
     padding: 60px 20px;
     border-top: 4px solid $color-acento;
@@ -210,7 +211,7 @@
             color: $color-texto;
 
             strong {
-                color: black;
+                color: black; // Mantengo 'black' ya que no hay una variable para un negro puro y específico aquí.
                 font-weight: 700;
             }
         }
@@ -306,7 +307,8 @@
 
     .titulo-lugares {
         font-size: 2rem;
-        color: $color-primario;
+        // Aquí utilizo $color-primario porque no tienes definida $color-principal
+        color: $color-primario; 
         margin-bottom: 15px;
     }
 
@@ -332,8 +334,9 @@
 
             a {
                 text-decoration: none;
-                color: $color-primario;
-                background-color: white;
+                // Aquí utilizo $color-primario porque no tienes definida $color-principal
+                color: $color-primario; 
+                background-color: $color-blanco;
                 padding: 12px 20px;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -350,4 +353,4 @@
     }
 }
 
-/*! -------- FIN CSS DE HABITAT -------- */
+/*! -------- FIN SCSS DE HÁBITAT -------- */
