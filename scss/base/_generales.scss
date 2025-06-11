@@ -10,17 +10,20 @@
 
 // Body
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
     font-family: $fuente-quicksand;
     line-height: 1.6;
     color: $color-texto;
 }
 
+.custom-navbar {
+    margin-bottom: 0 !important;
+}
+
 // Main
 .main-content {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
     overflow: hidden;
-
 }
