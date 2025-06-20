@@ -644,9 +644,6 @@ header .navbar.bg-body-tertiary {
 /*! -------- FIN SCSS DE HÁBITAT -------- */
 /*! -------- INICIO SCSS DE ALIMENTACIÓN -------- */
 /* Carousel */
-.alimentacion-index #carouselAlimentacion {
-  margin-bottom: 0 !important;
-}
 .alimentacion-index .carousel-item img {
   max-height: 600px;
   object-fit: cover;
@@ -667,10 +664,6 @@ header .navbar.bg-body-tertiary {
   background-color: #E6F3F9;
   padding: 3rem 1rem;
   text-align: center;
-}
-.alimentacion-detalle h1 {
-  color: #0085C9;
-  margin-bottom: 3rem;
 }
 .alimentacion-detalle h2 {
   font-size: 2rem;
